@@ -4,54 +4,148 @@
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>CHOI SU BIN portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/images/pavicon.png">
   </head>
   <body>
     <main>
       <h1>Nice to meet you! :)</h1>
-      <section id="container">
-        <div class="my_profile">
-          <h2 class="profile_image">
-            <img src="/assets/images/profile/me.jpg" alt="" />
-          </h2>
-          <h3>최수빈</h3>
-          <p class="birth">
-            <img
-              src="/assets/images/profile/birth.svg"
-              alt="케이크 아이콘"
-            />2001. 03. 09
-          </p>
-          <p class="email">
-            <img
-              src="/assets/images/profile/email.svg"
-              alt="이메일 아이콘"
-            />z_o_ojj@naver.com
-          </p>
-          <p class="phone_num">
-            <img
-              src="/assets/images/profile/telephone.svg"
-              alt="전화번호 아이콘"
-            />010-381-6805
-          </p>
+      <section id="main-content-wrapper">
+        <div class="left-column">
+          <div class="my_profile">
+            <h2 class="profile_image">
+              <!-- <img src="/assets/images/profile/me.jpg" alt="본인 얼굴 정면 이미지" /> -->
+              <img src="/assets/images/main.png" alt="" />
+            </h2>
+            <h3>최수빈</h3>
+            <p class="icon">
+              <img
+                src="/assets/images/profile/birth.svg"
+                alt="케이크 아이콘"
+              />2001. 03. 09
+            </p>
+            <p class="icon">
+              <img
+                src="/assets/images/profile/email.svg"
+                alt="이메일 아이콘"
+              />z_o_ojj@naver.com
+            </p>
+            <p class="icon">
+              <img
+                src="/assets/images/profile/telephone.svg"
+                alt="전화번호 아이콘"
+              />010-381-6805
+            </p>
+          </div>
+
+          <div id="education" class="section-box">
+            <h3>Education</h3>
+            <ul>
+              <li class="list"><strong>2025. 07</strong>이젠아카데미 UIUX디자인 웹기획 부트캠프(960H) 과정 수료</li>
+              <li class="list"><strong>2025. 02</strong>산업디자인학과 학사졸업</li>
+            </ul>
+          </div>
+
+          <div id="expreience" class="section-box">
+            <h3>Exprience</h3>
+            <ul>
+              <li class="list"><strong>2023. 04</strong>CU 편의점 아르바이트(17개월)</li>
+              <li class="list"><strong>2022. 09</strong>쿠스쿠스 개인 베이커리 아르바이트(9개월)</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="skills_items">
-          <h3>SKills</h3>
-          <div class="skill_item">
-            <img src="/assets/images/profile/ps.png" alt="어도비 포토샵 아이콘">
-            <div class="skill_bar_container">
-              <div class="skill_bar"></div>
-              <span class="skill_percentage">90%</span>
-            </div>
-
+        <div class="right-column">
+          <div id="skill" class="section-box"></div>
+          <h3>Skills</h3>
+          <div class="skills_items">
             <div class="skill_item">
-            <img src="/assets/images/profile/ai.png" alt="어도비 일러스트레이션션 아이콘">
-            <div class="skill_bar_container">
-              <div class="skill_bar"></div>
-              <span class="skill_percentage">90%</span>
+              <img src="/assets/images/profile/ps.png" alt="어도비 포토샵 logo">
+              <div class="skill_bar">
+                <span class="skill_percentage">
+                  90%
+                </span>
+              </div>
+            </div>
+            <!-- ai -->
+            <div class="skill_item">
+            <img src="/assets/images/profile/ai.png" alt="어도비 일러스트레이션 logo">
+              <div class="skill_bar">
+                <span class="skill_percentage">
+                  90%
+                </span>
+              </div>
+            </div>
+            <!-- figma -->
+            <div class="skill_item">
+              <img src="/assets/images/profile/figma.png" alt="피그마 logo">
+              <div class="skill_bar">
+                <span class="skill_percentage">
+                  90%
+                </span>
+              </div>
+            </div>
+            <!-- html/css -->
+            <div class="skill_item">
+            <img src="/assets/images/profile/html.png" alt="html logo">
+              <img src="/assets/images/profile/css.png" alt="css logo">
+              <div class="skill_bar">
+                <span class="skill_percentage">
+                  90%
+                </span>
+              </div>
+            </div>
+            <!-- js/jquery -->
+            <div class="skill_item">
+              <img src="/assets/images/profile/js.png" alt="js logo">
+              <img src="/assets/images/profile/jqurey.png" alt="jqurey logo">
+              <div class="skill_bar">
+                <span class="skill_percentage">
+                  90%
+                </span>
+              </div>
             </div>
 
+            <div class="other_skill">
+              <img src="/assets/images/profile/vscode.png" alt="vscode logo">
+              <img src="/assets/images/profile/github.png" alt="github logo">
+              <img src="/assets/images/profile/sass.png" alt="sass logo">
+              <img src="/assets/images/profile/svg.png" alt="svg logo">
+              <img src="/assets/images/profile/bootstrap.png" alt="bootstrap logo">
+              <img src="/assets/images/profile/xd.png" alt="xd logo">
+              <img src="/assets/images/profile/id.png" alt="id logo">
+              <img src="/assets/images/profile/blender.png" alt="blender logo">
+              <img src="/assets/images/profile/rhino.png" alt="rhino logo">
+              <img src="/assets/images/profile/keyshot.png" alt="keyshot logo">
+              
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section id="pic" class="section-box">
+        <div class="pic_wrap">
+          <h3>컨텐츠 제목</h3>
+          <a href="https://youtu.be/ZV_9Uiowl6c?si=cByfNgZg4pKiytxt"><img src="/assets/images/youtube.png" alt="대학, 세상을 연결하다 -jtbc 방송"></a>
+        </div>
+      </section>
+
+      <section id="active" class="section-box">
+        <h3>Awards</h3>
+        <ul>
+          <li><strong>2023</strong>U300 성장트랙 최종선정 교육부장관 인증서</li>
+          <li><strong>2023</strong>LINC 3.0 ICC연계 창업 경진대회 은상</li>
+          <li><strong>2022</strong>블루어워즈 상품디자인 국제공모전 입선</li>
+        </ul>
+        <div class="license">
+          <h3>License</h3>
+          <ul>
+            <li>Adobe Certifie Professional Ps, Ai, Id</li>
+            <li>GTQ 1급</li>
+            <li>MAT 경영 Module A</li>
+            <li>컴퓨터활용능력 2급</li>
+            <li>운전면허 2종</li>
+          </ul>
         </div>
       </section>
     </main>
