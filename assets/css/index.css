@@ -65,7 +65,7 @@ h1{
 }
 
 .section-box h3{
-  font-size: 25px;
+  font-size: 22px;
 }
 .section-box ul{
   padding: 0;
@@ -74,7 +74,7 @@ h1{
 .section-box ul li{
   margin-bottom: 10px;
   color: var(--text-medium);
-  font-size: 20px;
+  font-size: 18px;
 }
 .section-box ul li.list strong{
   padding-right: 8px;
@@ -91,35 +91,3 @@ h1{
 }
 
 /* skill */
-
-
-
-
-
-.skill_item img{
-  width: 50px;
-  height: 50px;
-}
-#active{
-  background: #fff;
-  display: flex;
-  flex-direction: row;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-#active h3{
-  color: var(--color-black);
-  font-size: 25px;
-  margin-top: 0px;
-  padding-bottom: 10px;
-}
-#box-wrap ul li{
-  margin-bottom: 12px;
-  color: var(--color-black);
-  font-size: 20px;
-}
-#box-wrap ul li strong{
-  padding-right: 10px;
-}
-#box-wrap .lincense

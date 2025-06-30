@@ -1,7 +1,16 @@
 @import url(/assets/css/index.css);
 @import url(/assets/css/header.css);
-@import url(/assets/css/.css);
-@import url(/assets/css/.css);
+@import url(/assets/css/design.css);
+@import url(/assets/css/page01.css);
+/* @import url(/assets/css/popup.css);
+@import url(/assets/css/cardnews.css);
+@import url(/assets/css/namecard.css);
+@import url(/assets/css/boss.css);
+@import url(/assets/css/blend.css);
+@import url(/assets/css/brush3D.css);
+@import url(/assets/css/5typebanner.css);
+@import url(/assets/css/mitte.css);
+@import url(/assets/css/diary.css); */
 @import url(/assets/css/footer.css);
 
 
@@ -9,7 +18,7 @@
   --primary-green: #67FC6B;
   --primary-yellow: #F8FF64;
   --bg-green: #D9FFDA;
-  --secondadry: #A77459;
+  --secondary: #A77459;
   --text-black: #333;
   --text-gray5: #555;
   --text-gray8: #888;
@@ -26,4 +35,5 @@ h2, h3, h4, h5, h6{
 }
 *{
   box-sizing: border-box;
+  text-decoration: none;
 }
