@@ -1,0 +1,106 @@
+#page01{
+  /* border: 1px solid #000; */
+}
+#page01 .design{
+  /* border: 1px solid #000; */
+}#page01 .page-index h3{
+  font-size: 50px;
+  color: #333;
+}
+#page01 .page-index strong{
+  font-size: 200px;
+  font-family: 'Paperlogy-9Black';
+  font-weight: 900;
+  color: var(--light-gray);
+}
+
+/* TabMenu */
+.tabMenu .btn{
+  width: 120px;
+  height: 45px;
+  display: flex;
+  margin-top: 60px;
+  gap: 20px;
+  align-items: center;
+}
+.tabMenu .btn li{
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  /* text-align: center; */
+}
+.tabMenu .btn li:hover,
+.tabMenu .btn li.active{  /* JQuery에서 active클래스 생성및 삭제 */
+  background-color: var(--primary-yellow);
+  box-shadow: var(--box-shadow);
+}
+
+
+/* TabContent */
+.tabMenu .tabContents{
+  background-color: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+}
+/* .tabMenu .tabContents div h2{
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+} */
+.tabMenu .tabContents div{display: none;}  
+.tabMenu .tabContents div.active{display: block;}  /* JQuery에서 active클래스 생성및 삭제 */
+.tabContents .grid-item{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 380px;
+  display: inline-block;
+}
+.tabContents .tab1 img,
+.tabContents .tab2 img{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.tabContents .grid-item img{
+  float: left;
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+}
+.tabContents .grid-item .text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background-color: var(--secondary);
+  color: #333;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out 0.3 ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+}
+.tabContents .grid-item:hover .text{
+  transform: translateY(0);
+  opacity: 1;
+}
+.tabContents .grid-item .text p{
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.tabContents .grid-item .text img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}

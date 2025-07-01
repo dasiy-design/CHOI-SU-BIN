@@ -1,0 +1,108 @@
+#page02{
+  /* border: 1px solid #000; */
+}
+#page02 .design{
+  /* border: 1px solid #000; */
+}#page02 .page-index h3{
+  font-size: 50px;
+  color: #333;
+}
+#page02 .page-index strong{
+  font-size: 200px;
+  font-family: 'Paperlogy-9Black';
+  font-weight: 900;
+  color: var(--light-gray);
+}
+
+.items{
+
+}
+.item-list{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.item-list img{
+  width: 380px;
+  height: 300px;
+}
+.item-list li{
+  border: 1px solid #000;
+  width: 380px;
+  height: 300px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-list li a{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* pop up Box */
+.modal{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modalBox{
+  position: relative;
+  width: 1200px;
+  min-height: 100%;
+  margin: auto;
+}
+.modal-content{
+  position: absolute;
+  width: 1200px;
+  min-height: 100%;
+  background-color: #fff;
+}
+.modal-content > li{
+  display: none;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-content p{
+  color: #888;
+}
+.modal-btn{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 100px;
+  height: 150px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2000;
+}
+.modal-btn i{cursor: pointer;}
+.close{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.close i{font-size: 32px;}
+.lr-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.page-num{
+  font-size: 14px;
+  color: #fff;
+  width: 80px;
+  padding-top: 10px;
+  height: 50px;
+  text-align: center;
+}

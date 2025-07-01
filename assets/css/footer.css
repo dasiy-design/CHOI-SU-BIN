@@ -1,0 +1,33 @@
+html{
+  max-width: 100vw;
+  position: relative;
+}
+
+footer{
+  background-color: var(--primary-yellow) ;
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--text-gray8);
+  /* font-family: 'Paperlogy-5Medium'; */
+  font-family: 'Paperlogy-4Regular';
+  font-weight: 400;
+  /* position: fixed; */
+}
+footer p{
+  margin: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+footer p strong{
+  color: var(--secondary);
+  font-family: 'Paperlogy-7Bold';
+  font-weight: 700;
+  font-size: 18px;
+}
+footer em{
+  font-style: italic;
+  font-size: 14px;
+}

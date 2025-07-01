@@ -1,0 +1,86 @@
+.top{
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+}
+.top .right{
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  height: 420px;
+}
+#resume .right .img h3{
+  text-align: left;
+  margin: 40px 20px 20px;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #333;
+}
+#resume .right .img .gallery{
+  width: 420px;
+  height: 360px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+#resume .right .img .gallery img{
+  display: block;
+  border-radius: 8px;
+}
+#resume .right .img .gallery ul.largeImg li{
+  width: 380px;
+  height: 180px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#resume .right .img .gallery ul.largeImg li:first-child{display: block;}
+#resume .right .img .gallery ul.largeImg li img{
+  width: 360px;
+  height: 180px;
+  object-fit: cover;
+  margin-left: 12px;
+}
+#resume .right .img .gallery ul.thumbs{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  column-gap: 10px;
+  /* border: 1px solid #000; */
+}
+#resume .right .img .gallery ul.thumbs li{
+  opacity: 0.7;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+#resume .right .img .gallery ul.thumbs li:first-child{opacity: 1;}
+#resume .right .img .gallery ul.thumbs li a img{
+  width: 100px;
+  height: 65px;
+}
+#resume .right .img .gallery ul.thumbs i.fa{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+}
+#resume .right .img .gallery ul.imgText li{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+#resume .right .img .gallery ul.imgText li:first-child{display: block;}
+#resume .right .img .gallery ul.imgText li strong{
+  padding: 0 50px 0 20px;
+  /* font-size: ; */
+  color: #888;
+  text-transform: capitalize;
+  font-family: 'Paperlogy-4Regular';
+  font-weight: 400;
+}

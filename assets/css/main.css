@@ -1,0 +1,317 @@
+body{
+  padding: 20px;
+  color: #333;
+  background-color: #D9FFDA;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* font-size: 16px; */
+  font-family: 'Paperlogy-8ExtraBold';
+}
+
+html{
+  max-width: 100vw;
+  position: relative;
+}
+.menu-bar{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 18px;
+  height: 100px;
+  border-radius: 0 8px 8px 0;
+  background-color: var(--secondary);
+  display: fixed;
+}
+.menu{
+  /* border: 1px solid #000; */
+  width: 148px;
+  height: 300px;
+  line-height: 0.5;
+  text-transform: uppercase;
+  font-size: 14px;
+  /* opacity: 0; */
+  position: absolute;
+  top: 100px;
+  left: 0;
+
+}
+.active{
+  /* opacity: 1; */
+}
+
+
+
+main{
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid #000; */
+}
+
+
+#resume-top{
+  display: flex;
+  justify-content: space-between;
+}
+h1{
+  color: #67FC6B;
+  font-size: 35px;
+  font-weight: 900;
+  margin-left: 50px;
+  font-family: 'Paperlogy-9Black';
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+
+
+#resume{
+  display: flex;
+  
+}
+#resume .top-left{
+  
+}
+#resume .top-left .mypage h2.profile_image img{
+  border-radius: 300px 300px 0 0;
+  /* border: 1px solid #000; */
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+}
+#resume .top-left .mypage  p.icon img{
+  padding-right: 10px;
+}
+#resume .top-left .mypage h3.name{
+  font-size: 24px;
+  color: var(--secondary);
+  text-align: center;
+  width: 230px;
+  letter-spacing: 1px;
+  font-family: 'Paperlogy-7Bold';
+}
+#resume .top-left .mypage h3.name strong{
+  font-size: 16px;
+  margin-left: 5px;
+  font-family: 'Paperlogy-5Medium';
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+#resume .top-left .mypage p.icon{
+  align-items: center;
+  width: 200px;
+  display: flex;
+  justify-content: left;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: 'Paperlogy-7Bold';
+}
+
+
+/* left spec */
+#resume .top-left .spec .edu,
+#resume .top-left .spec .exp{
+  width: 320px;
+  padding-top: 10px;
+  color: #666;
+  font-family: 'Paperlogy-5Medium';
+  word-break : keep-all
+}
+#resume .top-left .spec .edu h3,
+#resume .top-left .spec .exp h3{
+  font-family: 'Paperlogy-7Bold';
+}
+
+
+#resume .top-left .spec .edu strong,
+#resume .top-left .spec .exp strong
+{
+  padding-right: 10px;
+  font-family: 'Paperlogy-8ExtraBold';
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+/* skill box----------------- */
+#resume .top-right{
+  width: 388px;
+  height: 420px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+#resume .top-right .top .left h3{
+  font-size: 25px;
+  color: #888;
+  text-transform: uppercase;
+  margin-left: 20px;
+  letter-spacing: 1.8px;
+}
+#resume .top-right .top .left .skill-box{
+  position: absolute;
+  width: 90%;
+  margin-left: 20px;
+  height: 320px;
+}
+#resume .top-right .top .left .skill-item{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+#resume .top-right .top .left .skill-item img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  
+}
+#resume .top-right .top .left .skill-item .skill_bar{
+  /* border: 1px solid #000; */
+  width: 320px;
+  background-color: #D2FFC9;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+#resume .top-right .top .left .skill-item span.skill_percentage{
+  display: inline-block;
+  width: 90%;
+  height: 28px;
+  background-color: var(--primary-green);
+  border-radius: 50px;
+  text-align: right;
+  align-content: center;
+  padding-right: 10px;
+}
+#resume .top-right .top .left .other{
+  margin: 30px 0;
+  width: 360px;
+}
+#resume .top-right .top .left .other img{margin: 0 2px 0;}
+
+
+/* 활동 이미지---------- */
+#resume .top{
+  display: flex;
+  width: 900px;
+  /* border: 1px solid #000; */
+  justify-content: space-between;
+}
+
+#resume .top .right{
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  height: 420px;
+}
+#resume .right .img h3{
+  text-align: left;
+  margin: 40px 20px 20px;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #333;
+}
+#resume .right .img .gallery{
+  width: 420px;
+  height: 360px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+#resume .right .img .gallery img{
+  display: block;
+  border-radius: 8px;
+}
+#resume .right .img .gallery ul.largeImg li{
+  width: 380px;
+  height: 180px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#resume .right .img .gallery ul.largeImg li:first-child{display: block;}
+#resume .right .img .gallery ul.largeImg li img{
+  width: 360px;
+  height: 180px;
+  object-fit: cover;
+  margin-left: 12px;
+}
+#resume .right .img .gallery ul.thumbs{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  column-gap: 10px;
+  /* border: 1px solid #000; */
+}
+#resume .right .img .gallery ul.thumbs li{
+  opacity: 0.7;
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+#resume .right .img .gallery ul.thumbs li:first-child{opacity: 1;}
+#resume .right .img .gallery ul.thumbs li a img{
+  width: 100px;
+  height: 65px;
+}
+
+
+/* arrow---- */
+
+#resume .right .img .gallery .arrow-btn i.fa{
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  color: var(--light-gray);
+}
+#resume .right .img .gallery .arrow-btn p.left-btn i.fa{
+  position: absolute;
+  top: 0;
+  left: 40px;
+  border: 1px solid blue;
+}
+#resume .right .img .gallery .arrow-btn p.right-btn i.fa{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: 1px solid blue;
+}
+
+
+
+#resume .right .img .gallery ul.imgText li{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+}
+#resume .right .img .gallery ul.imgText li:first-child{display: block;}
+#resume .right .img .gallery ul.imgText li strong{
+  padding: 0 50px 0 20px;
+  /* font-size: ; */
+  color: #888;
+  text-transform: capitalize;
+  font-family: 'Paperlogy-4Regular';
+  font-weight: 400;
+}
+
+/* bottom spec */
+#resume .right .bottom{
+
+}
+
