@@ -106,3 +106,80 @@
   height: 50px;
   text-align: center;
 }
+
+
+
+
+#publishing{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 1350px;
+  height: 500px;
+  /* border: 1px solid #000; */
+}
+
+#publishing .left_info{
+  display: flex;
+  flex-direction: column;
+}
+#publishing .left_info .caption h3{
+  font-size: 36px;
+  color: var(--text-black);
+  font-family: 'Paperlogy-7Bold';
+  padding-bottom: 100px;
+}
+#publishing .left_info .caption{
+  width: 500px;
+  height: 1200px;
+  padding: 0 20px;
+  justify-items: left;
+  font-size: 22px;
+  color: var(--text-gray5);
+  font-family: 'Paperlogy-5Medium';
+  /* border: 1px solid #000; */
+}
+#publishing .left_info .caption strong{
+  color: #211A83;
+}
+#publishing .left_info .caption p{
+  /* border: 1px solid #000; */
+  width: 300px;
+}
+#publishing .left_info .caption p img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  margin-left: 80px;
+}
+
+#publishing .left_info .link{
+  width: 500px;
+  height: 300px;
+  /* border: 1px solid #000; */
+}
+#publishing .left_info .link a button{
+  width: 120px;
+  border: 2px solid var(--primary-green);
+  background-color: #fff;
+  margin: 50px 20px 0;
+  font-size: 20px;
+  color: var(--primary-green);
+}
+#publishing .left_info .link a button:hover{
+  border: 2px dotted var(--secondary);
+  background-color: var(--primary-yellow);
+  color: var(--secondary);
+  font-family: 'Paperlogy-7Bold';
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#publishing .right_mockup img{
+  /* border: 1px solid #000; */
+  width: 800px;
+  height: 500px;
+
+}
+
+
