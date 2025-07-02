@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   //각 목록을 클릭했을때 해당내용 나옴
-  $(".item_list li").click(function(){
+  $(".item-list li").click(function(){
 
     pageNum =$(this).index();
 

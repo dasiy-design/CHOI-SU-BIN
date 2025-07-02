@@ -1,3 +1,18 @@
+#page01 .page-index{
+  position: relative;
+}
+#page01 .page-index strong{
+  position: absolute;
+  z-index: 0;
+}
+#page01 .page-index h3{
+  position: absolute;
+  z-index: 3;
+
+  margin: 120px 80px;
+}
+
+
 
 .tab-button{
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
@@ -14,35 +29,106 @@
 .tab-button.active {
   background-color: #F8FF64;
   box-shadow: 4px 4px 4px rgb(103, 252, 107);
-  color: #222;
+  color: #000;
   font-weight: bold;
 }
 
-#page01{display: flex;}
-#page01 .page-index{
+
+.tabMenu .btn li{cursor: pointer;}
+.tabContents .tab1,
+.tabContents .tab2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin: 150px 20px;
+}
+.tabContents .item{
+  display: block;
   position: relative;
 }
-#page01 .page-index strong{
-  font-size: 200px;
-  color: #e3e3e3;
-  z-index: -1;
-  font-weight: bold;
+.tabContents .item .active{
+  opacity: 1;
+}
+.tabContents .item:hover .text-item{
+  opacity: 1;
+  background-color: rgba(103, 252, 107, 0.8);
+  width: 320px;
+  height: 300px;
   position: absolute;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  color: var(--color-black);
+  transition: all 0.3s ease-in-out;
 }
-#page01 .page-index h3{
-  font-size: 50px;
-  color: #222;
-  z-index: 1;
+.tabContents img{
+  width: 320px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-#page01 .tab-wrap{
+.tabContents .text{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 320px;
+  height: 100px;
+  background-color: var(--primary-yellow);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: var(--text-gray5);
+  font-family: 'Paperlogy-5Medium';
+  font-weight: 500;
+  line-height: 1.5;
+}
+.tabContents .text img{
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.tabContents .item .text-item{
+  opacity: 0;
+  background-color: rgba(103, 252, 107, 0.8);
+  width: 320px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  padding: 120px 70px;
   justify-content: center;
-  align-content: center;
-  margin-left: 40px;
 }
-
-
-
-#design{
+.tabContents .item .text-item p{
+  width: 180px;
+  font-family: 'Paperlogy-5Medium';
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.tabContents .item .text-item button.more{
+  border: none;
+  background-color: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Paperlogy-7Bold';
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px;
+}
+.tabContents .item .text-item button.more:hover{
+  background-color: var(--primary-yellow);
+  transform: translateY(-5px);
+  color: #333;
+  transition: 0.3s ease-in;
+}
+/* #design{
 
 }
 #design .img-container{
@@ -63,7 +149,7 @@
   margin: 30px;
   gap: 100px;
   position: relative;
-}
+} */
 
 
 
