@@ -21,7 +21,7 @@ html{
 
 main{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -210,6 +210,7 @@ h1{
   width: 900px;
   /* border: 1px solid #000; */
   justify-content: space-between;
+  margin-left: 40px;
 }
 
 #resume .skills-gallery-container .right{
@@ -349,7 +350,7 @@ h1{
   align-items: center;
   color: var(--text-gray5);
   font-family: 'Paperlogy-5Medium';
-  margin: 80px 0;
+  margin: 80px 40px;
 }
 #resume .bottom strong{
   margin-right: 10px;
