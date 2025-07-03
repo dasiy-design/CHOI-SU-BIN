@@ -122,12 +122,7 @@
   align-items: center;
   margin: 20px 40px;
 }
-.tabContents .item .text-item button.more:hover{
-  background-color: var(--primary-yellow);
-  transform: translateY(-5px);
-  color: #333;
-  transition: 0.3s ease-in;
-}
+
 /* #design{
 
 }

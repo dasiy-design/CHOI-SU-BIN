@@ -113,7 +113,7 @@
 #publishing{
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  /* background-color: #fff; */
   width: 1350px;
   height: 500px;
   /* border: 1px solid #000; */
@@ -166,20 +166,17 @@
   font-size: 20px;
   color: var(--primary-green);
 }
-#publishing .left_info .link a button:hover{
-  border: 2px dotted var(--secondary);
-  background-color: var(--primary-yellow);
-  color: var(--secondary);
-  font-family: 'Paperlogy-7Bold';
-  transform: translateY(-10px);
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-#publishing .right_mockup img{
-  /* border: 1px solid #000; */
-  width: 800px;
-  height: 500px;
 
+#publishing .right_mockup img{
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+#publishing .right_mockup .mediheal video{
+  width: 400px;
+  position: absolute;
+  z-index: 20;
 }
 
 

@@ -1,0 +1,26 @@
+#resume .top-left .mypage p.icon a:hover{
+  text-decoration-line: underline;
+  color: var(--text-black);
+}
+#resume .top-right .skills-gallery-container .left h3:hover{
+  text-decoration: wavy;
+}
+
+
+/* desgin section */
+.tabContents .item .text-item button.more:hover{
+  background-color: var(--primary-yellow);
+  transform: translateY(-5px);
+  color: #333;
+  transition: 0.3s ease-in;
+}
+
+#publishing .left_info .link a button:hover{
+  border: 2px dotted var(--secondary);
+  background-color: var(--primary-yellow);
+  color: var(--secondary);
+  font-family: 'Paperlogy-7Bold';
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
