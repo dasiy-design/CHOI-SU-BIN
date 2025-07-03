@@ -49,10 +49,9 @@ h1{
   display: flex;
   
 }
-#resume .resume-top-sections{
+#resume .resume-main-content{
   display: flex;
-  justify-content: space-between;
-  
+  width: 340px;
 }
 #resume .top-left{
   display: flex;
@@ -62,7 +61,7 @@ h1{
 }
 #resume .top-left .mypage h2.profile_image img{
   border-radius: 300px 300px 0 0;
-  /* border: 1px solid #000; */
+  border: 1px solid var(--secondary);
   width: 230px;
   height: 300px;
   object-fit: cover;
@@ -130,8 +129,8 @@ h1{
 }
 
 /* skill box----------------- */
-#resume .top-right{
-  width: 388px;
+#resume .top-right .skills-gallery-container .left{
+  width: 400px;
   height: 420px;
   border-radius: 20px;
   background-color: white;
@@ -141,14 +140,9 @@ h1{
 #resume .top-right .skills-gallery-container .left h3{
   font-size: 25px;
   text-transform: capitalize;
-  margin-left: 20px;
+  margin: 50px 20px;
   letter-spacing: 1.8px;
 }
-
-
-
-
-
 #resume .top-right .skills-gallery-container .left h3 span{
   animation: clover-ani 3s infinite;
 }
@@ -164,6 +158,7 @@ h1{
   display: flex;
   justify-content: space-between;
   border: 1px solid red;
+  align-items: center;
 }
 #resume .top-right .skills-gallery-container .left .skill-item img{
   width: 30px;
@@ -194,15 +189,22 @@ h1{
 #resume .top-right .skills-gallery-container .left .other{
   margin: 30px 0;
   width: 360px;
-  border: 1px solid blue;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #resume .top-right .skills-gallery-container .left .other img{
   margin: 0 2px 0;;
 }
 
 
+
+
 /* 활동 이미지---------- */
+.swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #resume .skills-gallery-container{
   display: flex;
   width: 900px;
@@ -241,36 +243,53 @@ h1{
   top: 0;
   left: 0;
 }
-#resume .right .img .gallery ul.largeImg li:first-child{display: block;}
+#resume .right .img .gallery ul.largeImg li:first-child,
+#resume .right .img .gallery ul.largeImg li.active{display: block;}
 #resume .right .img .gallery ul.largeImg li img{
   width: 360px;
   height: 180px;
   object-fit: cover;
   margin-left: 12px;
 }
-#resume .right .img .gallery ul.thumbs{
+/* 썸네일 수평 스크롤 */
+#resume .right .img .gallery .thumbs-wrapper{
   position: absolute;
   bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#resume .right .img .gallery ul.thumbs{
   display: flex;
   column-gap: 10px;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease;
+  width: max-content;
   /* border: 1px solid #000; */
 }
 #resume .right .img .gallery ul.thumbs li{
   opacity: 0.7;
   overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
   /* border: 1px solid #000; */
 }
-#resume .right .img .gallery ul.thumbs li:first-child{opacity: 1;}
+#resume .right .img .gallery ul.thumbs li:first-child,
+#resume .right .img .gallery ul.thumbs li.active{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
 #resume .right .img .gallery ul.thumbs li a img{
   width: 100px;
   height: 65px;
+  object-fit: cover;
 }
 
 
 /* arrow---- */
-
 #resume .right .img .gallery .arrow-btn i.fa{
   width: 30px;
   height: 30px;
@@ -330,6 +349,7 @@ h1{
   align-items: center;
   color: var(--text-gray5);
   font-family: 'Paperlogy-5Medium';
+  margin: 80px 0;
 }
 #resume .bottom strong{
   margin-right: 10px;

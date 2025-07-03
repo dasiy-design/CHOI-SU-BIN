@@ -25,7 +25,7 @@ $(document).ready(function(){
   });
 
   //이전버튼
-  $(".left_btn").click(function(){
+  $(".left-btn").click(function(){
     gNewIdx--;
     if(gNewIdx<0){  //계속 1씩 감소하다가 0이하가 되면 맨뒤부터 다시 시작
       gNewIdx = gImgCount-1;  //총개수 10개에서 1을 빼야 마지막 index번호 9가 됨
@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
   //다음버튼
-  $(".right_btn").click(function(){
+  $(".right-btn").click(function(){
     gNewIdx++;
     if(gNewIdx>gImgCount-1){ //계속 1씩 증가하다가 9가 초과되면 처음부터 다시 시작
       gNewIdx = 0;

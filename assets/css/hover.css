@@ -6,6 +6,10 @@
   text-decoration: wavy;
 }
 
+#resume .right .img .gallery ul.thumbs li:hover {
+  opacity: 1;
+}
+
 
 /* desgin section */
 .tabContents .item .text-item button.more:hover{
