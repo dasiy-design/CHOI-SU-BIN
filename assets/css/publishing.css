@@ -181,6 +181,7 @@
   width: 100%;
   max-width: 600px;
   margin: 50px;
+  animation: pc-dung 3s infinite;
 }
 #publishing-page .right_mockup .mockup img{
   width: 100%;
