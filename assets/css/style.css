@@ -2,6 +2,8 @@
 @import url(/assets/css/index.css);
 @import url(/assets/css/main.css);
 @import url(/assets/css/design.css);
+@import url(/assets/css/modal.css);
+@import url(/assets/css/publishing.css);
 @import url(/assets/css/page01.css);
 @import url(/assets/css/page02.css);
 
@@ -53,7 +55,30 @@ em{
 
 
 
+
+
 /* common css */
+
+body{
+  color: #333;
+  /* background-color: #D9FFDA; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* font-size: 16px; */
+  font-family: 'Paperlogy-8ExtraBold';
+}
+
+.sec1 #resume{
+  background-color: var(--bg-green);
+}
+.sec2 #design-page{
+  /* background-color: #fefefe; */
+  background-color: #eee;
+}
+
 #page .page-index{
   position: relative;
 }
@@ -93,4 +118,16 @@ em{
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
   margin: 150px 20px;
+}
+button.modal-close{
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: var(--secondary);
+}
+.modal-footer{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  gap: 10px;
 }

@@ -110,55 +110,64 @@
 
 
 
-#publishing{
+#publishing-page{
   display: flex;
   justify-content: space-between;
   /* background-color: #fff; */
-  width: 1350px;
-  height: 500px;
   /* border: 1px solid #000; */
+  background-color: #f1f1f1;
+  padding-top: 80px;
+  overflow-x: hidden;
 }
 
-#publishing .left_info{
+#publishing-page .page-index{
+  display: block;
+  margin-left: 50px;
+}
+
+#publishing-page .left_info{
   display: flex;
   flex-direction: column;
 }
-#publishing .left_info .caption h3{
+#publishing-page .left_info .caption h3{
   font-size: 36px;
   color: var(--text-black);
-  font-family: 'Paperlogy-7Bold';
+  font-family: 'Paperlogy-8ExtraBold';
+
   padding-bottom: 100px;
 }
-#publishing .left_info .caption{
+#publishing-page .left_info .caption{
   width: 500px;
-  height: 1200px;
-  padding: 0 20px;
   justify-items: left;
   font-size: 22px;
   color: var(--text-gray5);
   font-family: 'Paperlogy-5Medium';
   /* border: 1px solid #000; */
+  margin-left: 50px;
 }
-#publishing .left_info .caption strong{
+#publishing-page .left_info .caption strong{
   color: #211A83;
 }
-#publishing .left_info .caption p{
+#publishing-page .left_info .caption p
+{
   /* border: 1px solid #000; */
   width: 300px;
+  font-size: 18px;
 }
-#publishing .left_info .caption p img{
+#publishing-page .left_info .caption p img{
   width: 30px;
   height: 30px;
   border: 1px solid red;
-  margin-left: 80px;
+  margin-left: 10px;
 }
 
-#publishing .left_info .link{
+#publishing-page .left_info .link{
   width: 500px;
   height: 300px;
   /* border: 1px solid #000; */
+  margin-left: -15px;
 }
-#publishing .left_info .link a button{
+#publishing-page .left_info .link a button{
   width: 120px;
   border: 2px solid var(--primary-green);
   background-color: #fff;
@@ -167,16 +176,40 @@
   color: var(--primary-green);
 }
 
-#publishing .right_mockup img{
-  border: 1px solid #000;
-  width: 400px;
-  height: 400px;
+#publishing-page .right_mockup{
   position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px;
 }
-#publishing .right_mockup .mediheal video{
-  width: 400px;
+#publishing-page .right_mockup .mockup img{
+  width: 100%;
+  display: block;
+  transform: rotate(-21deg);
+}
+.mediheal{
   position: absolute;
-  z-index: 20;
+  top: 10%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.video-wrapper{
+  width: 78%;
+  height: 100%;
+  margin: -5px 328px 50px 30px;
+  padding-top: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: skew(-6deg, -3deg);
+}
+
+.video-wrapper video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 

@@ -41,14 +41,10 @@
 		</div>
 
 	<main>
-		<!-- 맨 위에 -->
-		<section id="resume-top">
-			<h1>Nice to meet you! :)</h1>
-			<img src="" alt="최수빈 로고">
-		</section>
 
 		<!-- resume -->
-		<section id="resume">
+		<section class="sec1" id="resume">
+			<h1 class="top">Nice to meet you! :)</h1>
 			<div class="resume-main-content">
 				<div class="top-left">
 					<div class="mypage">
@@ -254,17 +250,17 @@
 
 
     <!-- design page -->
-		<section id="page">
+		<section class="sec2" id="design-page">
       <div class="design-section">
 				<div class="design-header">
 					<h2 class="design-title">DESIGN</h2>
-					<!-- <div class="design-tags">
+					<div class="design-tags">
 						<span class="tag active" data-category="graphic">Graphic</span>
 						<span class="tag" data-category="UI/UX">UI/UX</span>
-					</div> -->
+					</div>
 				</div>
 				<div class="design-grid">
-					<div class="design-item" data-category="graphic">
+					<div class="design-item">
 						<div class="item">
 							<img src="/assets/images/design/namecard.png" alt="로고 명함">
 							<div class="overlay">
@@ -272,12 +268,12 @@
 									<h5>SB LOGO</h5>
 									<p><img src="/assets/images/profile/ai.png" alt="ai logo"></p>
 								</div>
-							</div>
 								<div class="text-item">
 									<p>제작날짜: 2025. 02. 05</p>
 									<p>제작기간: 4H</p>
 									<button class="more" onclick="openModalByIndex(0)">자세히보기</button>
 								</div>
+							</div>
 						</div>
 						<div class="item">
 							<img src="/assets/images/design/boss.jpg" alt="보스 헤드셋">
@@ -289,7 +285,7 @@
 								<div class="text-item">
 								<p>제작날짜: 2025. 01. 17</p>
 								<p>제작기간: 5H</p>
-								<button class="more" onclick="openModalByIndex(1)">자세히보기</button>
+								<button class="more"  onclick="openModalByIndex(1)">자세히보기</button>
 								</div>
 							</div>
 						</div>
@@ -302,7 +298,7 @@
 							<div class="text-item">
 								<p>제작날짜: 2025. 01. 17</p>
 								<p>제작기간: 2H</p>
-								<button class="more" data-index="3">자세히보기</button>
+								<button class="more"  onclick="openModalByIndex(2)">자세히보기</button>
 							</div>
 						</div>
 						<div class="item">
@@ -314,7 +310,7 @@
 							<div class="text-item">
 							<p>제작날짜: 2025. 01. 16</p>
 							<p>제작기간: 3H</p>
-							<button class="more" data-index="4">자세히보기</button>
+							<button class="more" onclick="openModalByIndex(3)">자세히보기</button>
 							</div>
 						</div>
 						<div class="item">
@@ -326,7 +322,7 @@
 							<div class="text-item">
 								<p>제작날짜: 2025. 01. 15</p>
 								<p>제작기간: 5H</p>
-								<button class="more" data-index="5">자세히보기</button>
+								<button class="more"  onclick="openModalByIndex(4)">자세히보기</button>
 							</div>
 						</div>
 						<div class="item">
@@ -338,7 +334,7 @@
 							<div class="text-item">
 							<p>제작날짜: 2025. 01. 11</p>
 							<p>제작기간: 4H</p>
-							<button class="more" data-index="6">자세히보기</button>
+							<button class="more" onclick="openModalByIndex(5)">자세히보기</button>
 							</div>
 						</div>
 						<div class="item">
@@ -367,8 +363,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="design-item" data-category="uiux">
 						<div class="item">
 							<img src="/assets/images/main.png" alt="카드뉴스">
 							<div class="overlay">
@@ -379,7 +373,7 @@
 								<div class="text-item">
 									<p>제작날짜: 2025. 02. 07</p>
 									<p>제작기간: 4H</p>
-									<button class="more" data-index="1">자세히보기</button>
+									<button class="more" onclick="openModalByIndex(0)">자세히보기</button>
 								</div>
 							</div>
           	</div>
@@ -448,70 +442,44 @@
 			</div>
 
 			<!-- modal -->
-			<!-- <div id="designModal" class="modal" data-index="1">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h2 class="modal-title" id="modalTitle">K-직장인이 월요일보다 수요일이 더 피곤한 이유</h2>
-						<div class="modal-subtitle id=modalSubtitle">100% personal <img src="/assets/images/profile/figma.png" alt="작업툴: 피그마"></div>
-						<span class="close" onclick="closeModal()">&times;</span>
+		<div id="designModal" class="modal">
+			<div class="modal-content">
+				<button class="close-btn" onclick="closeModal()">&times;</button>
+				
+				<div class="modal-header">
+					<h2 id="modalTitle">Mitte Banner</h2>
+					<div class="badge">
+						<div class="product-image">
+							<img src="/assets/images/design/mitte.jpg" alt="mitte">
+							<div class="product-title" id="productTitle">
+								찬바람 불 때, 미떼 핫초코 베너를 디자인하였습니다.
+							</div>
+							<div class="product-brand" id="productBrand">미떼</div>
 					</div>
-					<div class="modal-body">
-						<div class="modal-main-content">
-							<div class="modal-left">
-								<div class="modal-caption" id="modalCaption">
-									<p>
-										B2B 웰니스사업을 하고 있는 회사의 데이터를 분석한 내용을 토대로 작성된 기사를 인용하여 카드뉴스를 제작하였습니다.
-									</p>
-								</div>
-							</div>
-							<div class="modal-right">
-								<div class="modal-image-container">
-									<button class="modal-nav prev" onclick="prevModal()">></button>
-									<div class="modal-img" id="modalImg">
-										<div class="modal-image-content">
-											<img src="/assets/images/design/mockup/cardnews.png" alt="카드뉴스 표지">
-										</div>
-									</div>
-									<button class="modal-nav next" onclick="nextModal()"><</button>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer">
-							<h3>mockup</h3>
-						</div>
-
-						<div class="mockup-sec">
-							<div class="mockup-img">
-								<div style="position: relative; z-index: 2; ">
-									<img src="/assets/images/design/mockup/cardnews.png" alt="카드뉴스목업">
-								</div>
-							</div>
-						</div>
-						<div class="modal-bottom-text">
-							<p>이미지 소스 이외 모든 것은 직접 디자인하였으며, 주어진 작업 사이즈에 맞게 제작하였습니다.</p>
-						</div>
+						<span id="modalBadge">100% Personal</span>
+						<img src="/assets/images/profile/ps.png" alt="포토샵 사용">
 					</div>
 				</div>
-			</div> -->
-			<div id="designModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalTitle">프로젝트 제목</h2>
-                <button class="modal-close" onclick="closeModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <h3 id="modalSubtitle">프로젝트 부제목</h3>
-                <div id="modalContent">
-                    <!-- 동적 콘텐츠가 여기에 삽입됩니다 -->
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="closeModal()">닫기</button>
-                <button class="btn" onclick="showNextProject()">다음 프로젝트</button>
-            </div>
-        </div>
+				
+				<div class="modal-body">
+					
+						<div class="product-info" id="modalContent">
+							<!-- 프로젝트 내용이 여기에 표시됩니다 -->
+							<p class="text text-lg mb-4">내용입력하기</p>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<span id="modalSubtitle">Mockup</span>
+				</div>
+				
+				<div class="date-display" id="modalDate">02/11</div>
+				
+				<button class="navigation nav-prev" onclick="showPrevProject()">‹</button>
+				<button class="navigation nav-next" onclick="showNextProject()">›</button>
+				
+				
+			</div>
     </div>
-
 
 			</div>
 		</section>
@@ -522,80 +490,28 @@
           <li data-alt="tab2">UI/UX</li>
         </ul>
       </div> -->
-
-
-      <!-- modal  -->
-      <!-- <div class="modal" id="diaryModal">
-        <div class="modalBox">
-          <div class="close-button">&times;</div>
-          <ul class="modal-content">
-            <li>
-              <div class="top">
-                <h2>My Diary</h2>
-                <p>100% personal
-                <img src="/assets/images/profile/ps.png" alt="ps logo">
-              </p>
-              <div class="project">
-                <div class="left">
-                  <p>평소 취미로 다이어리에 스크랩을 하고 있어<br />포토샵을 활용하여 스크랩형식으로 다이어리<br /> 디자인을 하였습니다. </p>
-                </div>
-                <div class="right">
-                  <img src="/assets/images/design/diary.jpg" alt="다이어리">
-                  <h5>11/11</h5>
-                </div>
-              </div>
-              <div class="line">
-                mockup
-              </div>
-              <div class="mockup-img">
-                <img src="/assets/images/design/mockup/diary1.png" alt="">
-              </div>
-              <div class="footer">
-                <p>이미지 소스 이외 모든 것은 직접 디자인하였으며, 주어진 작업 사이즈에 맞게 제작하였습니다.</p>
-              </div>
-              </div>
-            </li>
-
-            <li data-index="11">
-              <div class="top">
-                <h2></h2>
-              </div>
-            </li>
-          </ul>
-
-          <div class="modal-controls">
-            <button class="pre"><</button>
-            <div class="page-num">
-              <span>11</span> / <span>11</span>
-            </div>
-            <button class="next">></button>
-          </div>
-        </div>
-      </div> -->
-
     </section>
 
 
     <!-- website page -->
-    <section id="page">
-      <div class="page-index">
+    <section id="publishing-page">
+			<div class="page-index">
         <strong>02</strong>
         <h3>Publishing</h3>
       </div>
-    </section>
-
-    <section id="publishing">
       <div class="left_info">
         <div class="caption">
           <h3><strong>Mediheal</strong> onepage</h3>
-          <p>제작기간: </p>
-          <p>100% personal <img src="/assets/images/profile/vscode.png" alt="vscode logo">
+          <p>제작기간: 2 week</p>
+          <p>100% personal
+						<img src="/assets/images/profile/figma.png" alt="figma logo">
+						<img src="/assets/images/profile/vscode.png" alt="vscode logo">
           </p>
-        </div>
-        <div class="link">
-          <a href="#"><button>FIGMA</button></a>
-          <a href="#"><button>GIT</button></a>
-          <a href="#"><button>SITE</button></a>
+					<div class="link">
+						<a href="https://www.figma.com/design/sOD2SAkj8qXqcADtJk8xte/%EC%B5%9C%EC%88%98%EB%B9%88-%EC%9B%90%ED%8E%98%EC%9D%B4%EC%A7%80?node-id=0-1&t=EtgD6UuL6poCZNbP-1"><button>FIGMA</button></a>
+						<a href="#"><button>GIT</button></a>
+						<a href="#"><button>SITE</button></a>
+        	</div>
         </div>
       </div>
       <div class="right_mockup">
@@ -603,7 +519,7 @@
           <img src="/assets/images/publishing/pc.png" alt="pc mockup">
         </div>
         <div class="mediheal">
-          <video src="/assets/images/publishing/mediheal.mp4"></video>
+          <div class="video-wrapper"><video src="/assets/images/publishing/mediheal.mp4" autoplay muted loop></video></div>
         </div>
           
       </div>
@@ -612,14 +528,14 @@
 
   </main>
 
-    <footer>
+    <!-- <footer>
       <p>
         귀중한 시간 내어 봐주셔서 감사합니다! 지금까지 <strong>" 최수빈 "</strong> 이었습니다.
         <br />
         본 포트폴리오는 100% 본인 창작물이며, 디자인에 활용된 이미지는 무료 소스로 제작하였습니다.<br />
         <em>copyright &copy;CHOI_SU_BIN all rights reserved.</em>
       </p>
-    </footer>
+    </footer> -->
 
 	<!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
