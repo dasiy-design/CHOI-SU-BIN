@@ -19,7 +19,8 @@
   transition: 0.3s ease-in;
 }
 
-#publishing-page .left_info .link a button:hover{
+#publishing-page .left_info .link a button:hover,
+#team-pj .left_info .link a button:hover{
   border: 2px dotted var(--secondary);
   background-color: var(--primary-yellow);
   color: var(--secondary);

@@ -8,10 +8,12 @@
 .sec1{
   background-color: var(--bg-green);
   width: 100vw;
+  padding-bottom: 50px;
 }
 .sec2{
-  background-color: white;
+  background-color: #FBFBFB;
   overflow-x: hidden;
+  margin-top: 100px;
 }
 
 
@@ -35,13 +37,14 @@ main{
 #resume .resume-main-content{
   display: flex;
   width: 340px;
+  align-items: center;
 }
 #resume .top-left{
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  padding: 0 100px;
+  padding: 0 0 0 100px;
   margin-left: 40px;
 }
 #resume .top-left .mypage h2.profile_image img{
@@ -115,7 +118,6 @@ main{
 
 #resume .top-right{
   width: 1400px;
-  margin-left: 80px;
 }
 
 /* skill box----------------- */

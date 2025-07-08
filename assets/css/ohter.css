@@ -1,0 +1,110 @@
+
+
+#other-design .design-grid .design-item{
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+#other-design .design-item .item{
+  display: block;
+  position: relative;
+  border: 1px solid blue;
+  margin: 40px;
+}
+#other-design .design-item .item .text-item:hover{
+  opacity: 1;
+  background-color: rgba(103, 252, 107, 0.8);
+  width: 320px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  color: var(--color-black);
+  transition: all 0.3s ease-in-out;
+}
+#other-design .design-item img{
+  width: 320px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#other-design .design-item .text{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 320px;
+  height: 100px;
+  background-color: var(--primary-yellow);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: var(--text-gray5);
+  font-family: 'Paperlogy-5Medium';
+  font-weight: 500;
+  line-height: 1.5;
+}
+#other-design .design-item .text img{
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#other-design .design-item .item .text-item{
+  opacity: 0;
+  background-color: rgba(103, 252, 107, 0.8);
+  width: 320px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  padding: 120px 70px;
+  justify-content: center;
+}
+#other-design .design-item .item .text-item p{
+  width: 180px;
+  font-family: 'Paperlogy-5Medium';
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+#other-design .design-item .item .text-item button.more{
+  border: none;
+  background-color: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Paperlogy-7Bold';
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px;
+}
+/* #design{
+
+}
+#design .img-container{
+  margin-top: 180px;
+  width: 1200px;
+}
+#design .container-wrap{
+
+}
+#design .img-wrap{
+  width: 1400px;
+  border: 1px solid #000;
+}
+#design .img-container .container-wrap .img-wrap img{
+  display: inline-block;
+  width: 320px;
+  height: 300px;
+  margin: 30px;
+  gap: 100px;
+  position: relative;
+} */

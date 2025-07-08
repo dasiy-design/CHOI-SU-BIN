@@ -4,8 +4,7 @@
 @import url(/assets/css/design.css);
 @import url(/assets/css/modal.css);
 @import url(/assets/css/publishing.css);
-@import url(/assets/css/page01.css);
-@import url(/assets/css/page02.css);
+@import url(/assets/css/ohter.css);
 
 @import url(/assets/css/footer.css);
 
@@ -55,10 +54,7 @@ em{
 
 
 
-
-
 /* common css */
-
 body{
   color: #333;
   /* background-color: #D9FFDA; */
@@ -69,14 +65,19 @@ body{
   box-sizing: border-box;
   /* font-size: 16px; */
   font-family: 'Paperlogy-8ExtraBold';
+  overflow-x: hidden;
 }
 
 .sec1 #resume{
   background-color: var(--bg-green);
+  padding-bottom: 120px;
 }
 .sec2 #design-page{
   /* background-color: #fefefe; */
   background-color: #eee;
+}
+.sec4 #other-design{
+  background-color: var(--light-gray) ;
 }
 
 #page .page-index{
@@ -130,4 +131,18 @@ button.modal-close{
   background-color: transparent;
   font-size: 20px;
   gap: 10px;
+}
+.left_info .link{
+  width: 500px;
+  height: 300px;
+  /* border: 1px solid #000; */
+  margin-left: -15px;
+}
+.left_info .link a button{
+  width: 120px;
+  border: 2px solid var(--primary-green);
+  background-color: #fff;
+  margin: 50px 20px 0;
+  font-size: 20px;
+  color: var(--primary-green);
 }

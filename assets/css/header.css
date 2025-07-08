@@ -1,4 +1,4 @@
-.menu-bar{
+/* .menu-bar{
   position: absolute;
   top: 100px;
   left: 0;
@@ -15,12 +15,61 @@
   line-height: 0.5;
   text-transform: uppercase;
   font-size: 14px;
-  /* opacity: 0; */
   position: absolute;
   top: 100px;
   left: 0;
   opacity: 0;
 }
 .menu-bar .active{
+  opacity: 1;
+} */
+
+
+/* 인디케이터 스타일 */
+.indicator-container {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.indicator {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: var(--primary-green);
+  border-radius: 50% 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator.active,
+.indicator:hover {
+  background: var(--primary-yellow);
+  border-radius: 0 50%;
+  scroll-behavior: smooth;
+}
+
+.indicator span {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-yellow);
+  color: var(--primary-green);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.indicator:hover span,
+.indicator.active span {
   opacity: 1;
 }

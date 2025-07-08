@@ -1,140 +1,77 @@
-#page02{
-  /* border: 1px solid #000; */
-}
-#page02 .design{
-  /* border: 1px solid #000; */
-}#page02 .page-index h3{
-  font-size: 50px;
-  color: #333;
-}
-#page02 .page-index strong{
-  font-size: 200px;
-  font-family: 'Paperlogy-9Black';
-  font-weight: 900;
-  color: var(--light-gray);
-}
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
 
-.items{
 
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-.item-list{
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.item-list img{
-  width: 380px;
-  height: 300px;
-}
-.item-list li{
-  border: 1px solid #000;
-  width: 380px;
-  height: 300px;
-  background-color: orange;
+.swiper-slide{
+  width: 400px;
+  height: 660px;
+  text-align: center;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
+  text-align: left;
 }
-.item-list li a{
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* pop up Box */
-.modal{
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
+.swiper-slide img {
+  display: block;
   width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10000;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+  object-fit: cover;
 }
-.modalBox{
-  position: relative;
-  width: 1200px;
-  min-height: 100%;
-  margin: auto;
+.swiper-button-prev{
+  margin-left: 120px;
 }
-.modal-content{
-  position: absolute;
-  width: 1200px;
-  min-height: 100%;
-  background-color: #fff;
+.swiper-button-next{
+  margin-right: 150px;
 }
-.modal-content > li{
-  display: none;
-  text-align: center;
-  font-size: 30px;
+.swiper-button-next,
+.swiper-button-prev{
+  color: #bbb;
 }
-.modal-content p{
-  color: #888;
+.swiper-button-next .active,
+.swiper-button-prev .acitve{
+  color: #777;
 }
-.modal-btn{
-  position: absolute;
-  right: 50px;
-  top: 30px;
-  width: 100px;
-  height: 150px;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  z-index: 2000;
-}
-.modal-btn i{cursor: pointer;}
-.close{
-  border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
-}
-.close i{font-size: 32px;}
-.lr-btn{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.page-num{
-  font-size: 14px;
-  color: #fff;
-  width: 80px;
-  padding-top: 10px;
-  height: 50px;
-  text-align: center;
-}
-
-
 
 
 #publishing-page{
-  display: flex;
   justify-content: space-between;
-  /* background-color: #fff; */
-  /* border: 1px solid #000; */
-  background-color: #f1f1f1;
+  background-color: #FBFBFB;
   padding-top: 80px;
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
 
 #publishing-page .page-index{
   display: block;
-  margin-left: 50px;
+  margin-left: 30px;
+  height: 100px;
+  width: 200px;
 }
 
 #publishing-page .left_info{
   display: flex;
   flex-direction: column;
 }
-#publishing-page .left_info .caption h3{
+#publishing-page .swiper .left_info .caption h3{
   font-size: 36px;
   color: var(--text-black);
   font-family: 'Paperlogy-8ExtraBold';
-
-  padding-bottom: 100px;
+  padding: 60px 0;
 }
 #publishing-page .left_info .caption{
   width: 500px;
@@ -142,16 +79,17 @@
   font-size: 22px;
   color: var(--text-gray5);
   font-family: 'Paperlogy-5Medium';
-  /* border: 1px solid #000; */
-  margin-left: 50px;
 }
+
+/* 메디힐 */
 #publishing-page .left_info .caption strong{
   color: #211A83;
+  font-size: 50px;
+  margin-top: 120px;
 }
 #publishing-page .left_info .caption p
 {
-  /* border: 1px solid #000; */
-  width: 300px;
+  width: 350px;
   font-size: 18px;
 }
 #publishing-page .left_info .caption p img{
@@ -159,21 +97,6 @@
   height: 30px;
   border: 1px solid red;
   margin-left: 10px;
-}
-
-#publishing-page .left_info .link{
-  width: 500px;
-  height: 300px;
-  /* border: 1px solid #000; */
-  margin-left: -15px;
-}
-#publishing-page .left_info .link a button{
-  width: 120px;
-  border: 2px solid var(--primary-green);
-  background-color: #fff;
-  margin: 50px 20px 0;
-  font-size: 20px;
-  color: var(--primary-green);
 }
 
 #publishing-page .right_mockup{
@@ -186,31 +109,169 @@
 #publishing-page .right_mockup .mockup img{
   width: 100%;
   display: block;
-  transform: rotate(-21deg);
+  transform: rotate(-20deg);
 }
-.mediheal{
+.pc{
   position: absolute;
   top: 10%;
   width: 100%;
   overflow: hidden;
   pointer-events: none;
+  transform: translateX(10px);
 }
-
 .video-wrapper{
   width: 78%;
   height: 100%;
-  margin: -5px 328px 50px 30px;
+  margin: 0 328px 50px 35px;
   padding-top: 14px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
-  transform: skew(-6deg, -3deg);
+  transform: skew(-5deg, -2deg);
 }
-
 .video-wrapper video{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  clip-path: inset(0 round 2px);
 }
 
 
+/* aespa */
+#publishing-page .aespa .left_info .caption p{
+  /* font-family: "Bitcount Grid Double", system-ui; */
+  font-family: "Tektur", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  /* color: #8CFC38; */
+  color: #333;
+}
+#publishing-page .aespa .left_info .caption p em{
+  color: #8CFC38;
+  margin-right: 10px;
+  font-size: 22px;
+  font-weight: normal;
+}
+#publishing-page .aespa .left_info .caption h3{
+  font-family: "Manufacturing Consent", system-ui;
+  font-size: 42px;
+  letter-spacing: 1.2px;
+  padding: 40px 0;
+}
+#publishing-page .left_info .caption strong.aespa{
+  color: #111;
+  font-family: "Manufacturing Consent", system-ui;
+  text-shadow: none;
+  font-size: 120px;
+  font-weight: 400;
+  font-style: normal;
+}
+#publishing-page .aespa .right_mockup{
+  animation: none;
+  margin-top: -50px;
+}
+#publishing-page .aespa .right_mockup .pic .img-wrapper{
+  position: relative;
+  height: 500px;
+}
+#publishing-page .aespa .right_mockup .pic .img-wrapper .a1, .a2, .a3{
+  position: absolute;
+  /* top: 100px; */
+  left: 0;
+  box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.5);
+  width: 420px;
+  margin-left: 30px;
+  animation-direction: alternate;
+}
+.a1{
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  animation: a1-ani 3s infinite;
+}
+.a2{
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 3;
+  animation: a2-ani 4s infinite;
+}
+.a3{
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  z-index: 4;
+  animation: a3-ani 4s infinite;
+}
+
+
+/* team boardlife */ 
+#publishing-page .boardlife{
+  width: 1200px;
+}
+#publishing-page .boardlife .left_info .caption p{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+#publishing-page .boardlife .left_info .caption p em{
+  color: #FB9225;
+  margin-right: 10px;
+  font-weight: 800;
+}
+#publishing-page .boardlife .left_info .caption h3{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  padding: 40px 0;
+  line-height: 1;
+}
+#publishing-page .boardlife .left_info .caption strong{
+  color: #4A90E2;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  text-shadow: none;
+  font-size: 80px;
+  font-style: normal;
+}
+
+#publishing-page .boardlife .right_mockup{
+  animation: none;
+  margin-top: -50px;
+}
+#publishing-page .boardlife .right_mockup .mockup img{
+  border: 1px solid #000;
+  transform: rotate(0);
+  margin-left: 100px;
+  animation: none;
+  margin-top: -150px;
+  width: 300px;
+
+#publishing-page .boardlife .right_mockup .app .img-wrapper{
+  position: relative;
+}
+
+/* #publishing-page .boardlife .right_mockup .app .img-wrapper .bf1, .bf2, .bf3{
+  position: absolute;
+  left: 0;
+  box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.5);
+  width: 420px;
+  margin-left: 30px;
+}
+.bf1{
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+.bf2{
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 3;
+}
+.bf3{
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  z-index: 4;
+} */
