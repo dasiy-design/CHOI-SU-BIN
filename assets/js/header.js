@@ -7,8 +7,8 @@ const indicators = document.querySelectorAll('.indicator');
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (scrollY >= sectionTop - sectionHeight / 2 &&
-            scrollY < sectionTop + sectionHeight / 2) {
+        if (scrollY >= sectionTop - sectionHeight / 3 &&
+            scrollY < sectionTop + sectionHeight / 3) {
         indicator.classList.add('active');
         } else {
         indicator.classList.remove('active');

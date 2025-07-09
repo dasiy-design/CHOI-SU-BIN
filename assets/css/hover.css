@@ -21,11 +21,16 @@
 
 #publishing-page .left_info .link a button:hover,
 #team-pj .left_info .link a button:hover{
-  border: 2px dotted var(--secondary);
   background-color: var(--primary-yellow);
+  /* outline:  4px dotted var(--secondary); */
+  /* outline-offset: -2px; */
   color: var(--secondary);
   font-family: 'Paperlogy-7Bold';
   transform: translateX(5px);
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+  border: none;
+  padding: 5px;
 }
+

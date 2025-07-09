@@ -23,7 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
   text-align: left;
 }
 .swiper-slide img {
@@ -49,13 +48,8 @@
 
 
 #publishing-page{
-  justify-content: space-between;
-  background-color: #FBFBFB;
-  padding-top: 80px;
-  overflow: hidden;
-  position: relative;
+  padding: 10rem 0;
 }
-
 #publishing-page .page-index{
   display: block;
   margin-left: 30px;
@@ -66,12 +60,14 @@
 #publishing-page .left_info{
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  height: 600px;
+  margin-top: 50px;
 }
 #publishing-page .swiper .left_info .caption h3{
   font-size: 36px;
   color: var(--text-black);
   font-family: 'Paperlogy-8ExtraBold';
-  padding: 60px 0;
 }
 #publishing-page .left_info .caption{
   width: 500px;
@@ -79,31 +75,49 @@
   font-size: 22px;
   color: var(--text-gray5);
   font-family: 'Paperlogy-5Medium';
+  margin-right: 30px;
 }
 
+
+
 /* 메디힐 */
-#publishing-page .left_info .caption strong{
+#publishing-page .mediheal .left_info{margin-top: -50px;}
+.mediheal .left_info .caption{margin-top: 50px;}
+#publishing-page .mediheal .left_info .caption p{
+  font-weight: 500;
+  font-size: 24px;
+  /* color: #8CFC38; */
+  color: #333;
+}
+#publishing-page .mediheal .left_info .caption p em{
   color: #211A83;
-  font-size: 50px;
-  margin-top: 120px;
+  margin-right: 10px;
+  font-size: 22px;
+  font-style: normal;
+  font-family: 'Paperlogy-5Medium';
+  font-family: 'Paperlogy-7Bold';
 }
-#publishing-page .left_info .caption p
-{
-  width: 350px;
-  font-size: 18px;
+#publishing-page .mediheal .left_info .caption h3{
+  font-size: 28px;
+  letter-spacing: 1.6px;
+  padding: 40px 0;
+  color: #bbb;
+  font-family: 'Paperlogy-5Medium';
 }
-#publishing-page .left_info .caption p img{
-  width: 30px;
-  height: 30px;
-  border: 1px solid red;
-  margin-left: 10px;
+#publishing-page .mediheal .left_info .caption strong.title{
+  color: #211A83;
+  font-family: 'Paperlogy-9Black';
+  text-shadow: none;
+  font-style: normal;
+  font-size: 60px;
 }
 
 #publishing-page .right_mockup{
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: 50px;
+  /* margin: 0 0 0 100px; */
+  margin-left: 200px;
   animation: pc-dung 3s infinite;
 }
 #publishing-page .right_mockup .mockup img{
@@ -138,6 +152,9 @@
 
 
 /* aespa */
+#publishing-page .aespa .left_info{
+  margin-top: -50px;
+}
 #publishing-page .aespa .left_info .caption p{
   /* font-family: "Bitcount Grid Double", system-ui; */
   font-family: "Tektur", sans-serif;
@@ -156,9 +173,9 @@
   font-family: "Manufacturing Consent", system-ui;
   font-size: 42px;
   letter-spacing: 1.2px;
-  padding: 40px 0;
+  padding-top: 40px;
 }
-#publishing-page .left_info .caption strong.aespa{
+#publishing-page .left_info .caption strong.title{
   color: #111;
   font-family: "Manufacturing Consent", system-ui;
   text-shadow: none;
@@ -168,7 +185,7 @@
 }
 #publishing-page .aespa .right_mockup{
   animation: none;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 #publishing-page .aespa .right_mockup .pic .img-wrapper{
   position: relative;
@@ -176,8 +193,8 @@
 }
 #publishing-page .aespa .right_mockup .pic .img-wrapper .a1, .a2, .a3{
   position: absolute;
-  /* top: 100px; */
   left: 0;
+  top: 80px;
   box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.5);
   width: 420px;
   margin-left: 30px;
@@ -246,6 +263,7 @@
   animation: none;
   margin-top: -150px;
   width: 300px;
+}
 
 #publishing-page .boardlife .right_mockup .app .img-wrapper{
   position: relative;

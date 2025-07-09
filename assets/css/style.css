@@ -35,6 +35,8 @@ h2, h3, h4, h5, h6{
   color: var(--color-black);
 }
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -57,7 +59,7 @@ em{
 /* common css */
 body{
   color: #333;
-  /* background-color: #D9FFDA; */
+  background-color: #FBFBFB;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -67,15 +69,32 @@ body{
   font-family: 'Paperlogy-8ExtraBold';
   overflow-x: hidden;
 }
-
-.sec1 #resume{
+.sec1{
   background-color: var(--bg-green);
-  padding-bottom: 120px;
+  width: 100vw;
 }
-.sec2 #design-page{
+
+.sec2 .swiper-wrapper{
+  align-items: center;
+}
+
+.sec3{
+  background-color: #FBFBFB;
+  overflow-x: hidden;
+}
+
+
+
+.sec2 #publishing-page{
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  margin: 200px;
+}
+.sec3 #design-page{
   /* background-color: #fefefe; */
   background-color: #eee;
-}
+} 
 .sec4 #other-design{
   background-color: var(--light-gray) ;
 }
@@ -132,17 +151,14 @@ button.modal-close{
   font-size: 20px;
   gap: 10px;
 }
-.left_info .link{
-  width: 500px;
-  height: 300px;
-  /* border: 1px solid #000; */
-  margin-left: -15px;
-}
 .left_info .link a button{
+  position: relative;
   width: 120px;
-  border: 2px solid var(--primary-green);
+  /* border: 2px solid var(--primary-green); */
+  border: 4px dotted var(--secondary);;
   background-color: #fff;
-  margin: 50px 20px 0;
   font-size: 20px;
   color: var(--primary-green);
+  margin-right: 20px;
+  overflow: hidden;
 }
