@@ -1,18 +1,17 @@
-
-.design-grid .design-item{
+.design-grid .design-item {
   border: 1px solid #000;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
-.design-item .item{
+.design-item .item {
   display: block;
   position: relative;
   /* border: 1px solid blue; */
   margin: 40px;
 }
-.design-item .item .text-item:hover{
+.design-item .item .text-item:hover {
   opacity: 1;
   background-color: rgba(103, 252, 107, 0.8);
   width: 320px;
@@ -23,14 +22,14 @@
   color: var(--color-black);
   transition: all 0.3s ease-in-out;
 }
-.design-item img{
+.design-item img {
   width: 320px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.design-item .text{
+.design-item .text {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -42,18 +41,18 @@
   border-radius: 0 0 10px 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   color: var(--text-gray5);
-  font-family: 'Paperlogy-5Medium';
+  font-family: "Paperlogy-5Medium";
   font-weight: 500;
   line-height: 1.5;
 }
-.design-item .text img{
+.design-item .text img {
   width: 30px;
   height: 30px;
   border-radius: 0;
   box-shadow: none;
 }
 
-.design-item .item .text-item{
+.design-item .item .text-item {
   opacity: 0;
   background-color: rgba(103, 252, 107, 0.8);
   width: 320px;
@@ -64,20 +63,20 @@
   padding: 120px 70px;
   justify-content: center;
 }
-.design-item .item .text-item p{
+.design-item .item .text-item p {
   width: 180px;
-  font-family: 'Paperlogy-5Medium';
+  font-family: "Paperlogy-5Medium";
   font-weight: 500;
   display: flex;
   justify-content: center;
 }
-.design-item .item .text-item button.more{
+.design-item .item .text-item button.modal-custom-button {
   border: none;
   background-color: none;
   width: 100px;
   padding: 10px;
   border-radius: 20px;
-  font-family: 'Paperlogy-7Bold';
+  font-family: "Paperlogy-7Bold";
   font-weight: 700;
   color: var(--secondary);
   cursor: pointer;
@@ -107,6 +106,3 @@
   gap: 100px;
   position: relative;
 } */
-
-
-
