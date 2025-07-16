@@ -70,6 +70,8 @@
   display: flex;
   justify-content: center;
 }
+
+/* modal button    */
 .design-item .item .text-item button.modal-custom-button {
   border: none;
   background-color: none;
