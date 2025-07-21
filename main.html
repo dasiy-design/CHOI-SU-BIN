@@ -570,8 +570,8 @@
                 <div class="text-item">
                   <p>제작날짜: 2025. 01. 11</p>
                   <p>제작기간: 4H</p>
-                  <button class="open-modal" data-modal="modal6">
-                    자세히보기
+                  <button class="modal-custom-button" href="#myModal2">
+                    more
                   </button>
                 </div>
               </div>
@@ -751,11 +751,53 @@
       </div>
 
       <!-- modal -->
-      <div class="modal">
-        <div class="modal-body">
-          <div class="modal-header"></div>
-          <div class="modal-sec"></div>
-          <div class="modal-footer"></div>
+      <!-- 홈런볼 모달 -->
+      <div id="myModal2" class="modal-custom">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div class="modal-header">
+            <h2>Homerunball <br />New Flavor Banner</h2>
+            <strong>100% personal</strong>
+          </div>
+          <div class="modal-body">
+            <p>
+              홈런볼 신제품인 피스타치오맛 출시 기념<br />
+              다양한 크기의 배너를 디자인하였습니다.
+            </p>
+            <img
+              src="/assets/images/design/homerunball.png"
+              alt="홈런볼 배너 디자인"
+            />
+          </div>
+          <div class="modal-sec">
+            <h3>Mockup</h3>
+            <div class="pic">
+              <img
+                src="/assets/images/design/mockup/homerunball.png"
+                alt="홈런 볼 목업 1"
+              />
+              <img
+                src="/assets/images/design/mockup/homerunball1.png"
+                alt="홈런 볼 목업 2"
+              />
+              <img
+                src="/assets/images/design/mockup/homerunball2.png"
+                alt="홈런 볼 목업 3"
+              />
+              <img
+                src="/assets/images/design/mockup/homerunball3.png"
+                alt="홈런 볼 목업 4"
+              />
+            </div>
+
+            <div class="modal-footer">
+              <p>
+                이미지 소스 이외 모든 것은 직접 디자인하였으며, 주어진 작업
+                사이즈에 맞게 제작하였습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -773,7 +815,7 @@
 
     <!-- modal -->
     <!-- 로고 -->
-    <div class="modal fade" id="modal1" data-bs-keyboard="false" tabindex="-1">
+    <!-- <div class="modal fade" id="modal1" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-full-screen-sm-down modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -781,21 +823,20 @@
             <button class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <!-- <div class="container-fluid">
+            <div class="container-fluid">
 						<div class="row">
 							<div class="col-md-4">왼쪽</div>
 							<div class="col-md-4 ms-auto">우측</div>
 						</div>
-					</div> -->
+					</div>
           </div>
           <div class="modal-footer">
             <button class="prev">&times;</button>
           </div>
         </div>
       </div>
-    </div>
-    <!-- 미떼 -->
-    <div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1">
+    </div> -->
+    <!-- <div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-full-screen-sm-down modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -816,7 +857,6 @@
             </div>
           </div>
           <div class="modal-footer">
-            <!-- <button class="prev">&times;</button> -->
             <div class="line">mockup</div>
             <div class="mockimg">
               <img src="/assets/images/design/mockup/mitte.png" alt="" />
@@ -825,7 +865,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -839,7 +879,7 @@
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/gallery.js"></script>
     <script src="/assets/js/tab.js"></script>
-    <script src="/assets/js/modal.js"></script>
+    <!-- <script src="/assets/js/modal.js"></script> -->
 
     <!-- Initialize Swiper -->
     <script>

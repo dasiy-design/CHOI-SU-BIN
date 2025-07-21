@@ -2,7 +2,6 @@
 @import url(/assets/css/index.css);
 @import url(/assets/css/main.css);
 @import url(/assets/css/design.css);
-@import url(/assets/css/modal.css);
 @import url(/assets/css/publishing.css);
 @import url(/assets/css/ohter.css);
 
@@ -12,15 +11,20 @@
 @import url(/assets/css/font.css);
 @import url(/assets/css/hover.css);
 @import url(/assets/css/animation.css);
+@import url(/assets/css/common.css);
 
+/* modal css */
+@import url(/assets/css/modal-common.css);
+@import url(/assets/css/namecard.css);
+@import url(/assets/css/diary.css);
+@import url(/assets/css/homerunball.css);
+@import url(/assets/css/bose.css);
 
-
-
-:root{
-  --primary-green: #67FC6B;
-  --primary-yellow: #F8FF64;
-  --bg-green: #D9FFDA;
-  --secondary: #A77459;
+:root {
+  --primary-green: #67fc6b;
+  --primary-yellow: #f8ff64;
+  --bg-green: #d9ffda;
+  --secondary: #a77459;
   --text-black: #333;
   --text-gray5: #555;
   --text-gray8: #888;
@@ -30,88 +34,91 @@
   --box-radius: 10px;
   --box-shadow: 0 4px 10px rgba(103, 252, 107, 100);
 }
-li{list-style: none;}
-h2, h3, h4, h5, h6{
+li {
+  list-style: none;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-black);
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-a{text-decoration: none;}
-em{
+a {
+  text-decoration: none;
+  color: #222;
+}
+em {
   font-style: none;
 }
-
 
 /* cdn */
 
 /* fontawsome */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 /* google */
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 /* common css */
-body{
+body {
   color: #333;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
   box-sizing: border-box;
   /* font-size: 16px; */
-  font-family: 'Paperlogy-8ExtraBold';
+  font-family: "Paperlogy-8ExtraBold";
   overflow-x: hidden;
 }
-.sec1{
+.sec1 {
   background-color: var(--bg-green);
   width: 100vw;
 }
 
-.sec2 .swiper-wrapper{
+.sec2 .swiper-wrapper {
   align-items: center;
 }
 
-.sec3{
-  background-color: #FBFBFB;
+.sec3 {
+  background-color: #fbfbfb;
   overflow-x: hidden;
 }
 
-
-
-.sec2 #publishing-page{
+.sec2 #publishing-page {
   justify-content: space-between;
   overflow: hidden;
   position: relative;
   margin: 200px;
 }
-.sec3 #design-page{
+.sec3 #design-page {
   /* background-color: #fefefe; */
   background-color: #eee;
-} 
-.sec4 #other-design{
-  background-color: var(--light-gray) ;
+}
+.sec4 #other-design {
+  background-color: var(--light-gray);
 }
 
-#page .page-index{
+#page .page-index {
   position: relative;
 }
-#page .page-index strong{
+#page .page-index strong {
   position: absolute;
   z-index: 0;
 }
-#page .page-index h3{
+#page .page-index h3 {
   position: absolute;
   z-index: 3;
   margin: 120px 80px;
 }
-.tab-button{
+.tab-button {
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
   display: inline-block;
   border-radius: 50px;
@@ -124,38 +131,39 @@ body{
 }
 
 .tab-button.active {
-  background-color: #F8FF64;
+  background-color: #f8ff64;
   box-shadow: 4px 4px 4px rgb(103, 252, 107);
   color: #000;
   font-weight: bold;
 }
 
-
-.tabMenu .btn li{cursor: pointer;}
+.tabMenu .btn li {
+  cursor: pointer;
+}
 .tabContents .tab1,
-.tabContents .tab2{
+.tabContents .tab2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
   margin: 150px 20px;
 }
-button.modal-close{
+button.modal-close {
   border: none;
   background-color: transparent;
   font-size: 50px;
   color: var(--secondary);
 }
-.modal-footer{
+.modal-footer {
   border: none;
   background-color: transparent;
   font-size: 20px;
   gap: 10px;
 }
-.left_info .link a button{
+.left_info .link a button {
   position: relative;
   width: 120px;
   /* border: 2px solid var(--primary-green); */
-  border: 4px dotted var(--secondary);;
+  border: 4px dotted var(--secondary);
   background-color: #fff;
   font-size: 20px;
   color: var(--primary-green);

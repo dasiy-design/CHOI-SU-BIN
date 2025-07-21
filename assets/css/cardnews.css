@@ -1,0 +1,37 @@
+/* modal common */
+
+.diary-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff38d;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.diary-content .modal-header h2 {
+  color: #ff4546;
+}
+.diary-content .modal-body p {
+  color: var(--text-black);
+}
+.diary-content .modal-body img {
+  position: absolute;
+  width: 520px;
+}
+.diary-content .modal-sec {
+  background-color: white;
+}
+.diary-content .modal-sec .pic {
+  grid-template-rows: none;
+  height: 350px;
+}
+.diary-content .modal-sec h3 {
+  background-color: #916df6;
+  color: #444;
+}

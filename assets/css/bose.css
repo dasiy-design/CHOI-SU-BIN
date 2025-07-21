@@ -1,0 +1,35 @@
+/* modal common */
+
+.bose-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #7f2c97;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bose-content .modal-header h2 {
+  color: #000;
+}
+.bose-content .modal-body p {
+  color: white;
+}
+.bose-content .modal-body img {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+}
+
+.bose-content .modal-sec {
+  background-color: white;
+}
+.bose-content .modal-sec h3 {
+  background-color: #fc5862;
+  color: #444;
+}

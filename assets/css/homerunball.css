@@ -1,0 +1,39 @@
+.homerunball-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(/assets/images/bg-h.png);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  margin-top: 120px;
+  display: flex;
+  width: 1400px;
+  align-items: center;
+}
+.modal-header h2 {
+  font-family: "yg-jalnan";
+  color: #593d28;
+}
+
+.homerunball-content .modal-body img {
+  box-shadow: none;
+}
+.homerunball-content .modal-sec h3 {
+  background-color: #dbfc87;
+}
+.homerunball-content .modal-sec {
+  background-color: white;
+}
+.homerunball-content .modal-sec .pic {
+  height: 800px;
+}

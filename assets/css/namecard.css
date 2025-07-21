@@ -1,0 +1,52 @@
+.namecard-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #abfa9a;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.namecard-content .modal-header {
+  background-color: #ffeb3b;
+}
+.namecard-content .modal-header h2 em {
+  color: #1a9500;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-family: "yg-jalnan";
+}
+.namecard-content .modal-header h2 {
+  color: #3e3e3e;
+  font-family: "Paperlogy-9Black";
+}
+.namecard-content .modal-body p {
+  color: var(--text-black);
+  font-size: 25px;
+  line-height: 1.2;
+}
+.namecard-content .modal-body img {
+  box-shadow: none;
+}
+.namecard-content .modal-sec .pic {
+  height: 800px;
+}
+.namecard-content .modal-sec h3 {
+  background-color: #26db00;
+  color: #cc0635;
+}
+.namecard-content .modal-sec a h6 {
+  width: 200px;
+  border-radius: 0px;
+  font-size: 22px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffeb3b;
+  color: var(--text-black);
+  font-family: "Paperlogy-4Regular";
+  margin: 100px 580px;
+}

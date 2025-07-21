@@ -1,8 +1,8 @@
-#resume .top-left .mypage p.icon a:hover{
+#resume .top-left .mypage p.icon a:hover {
   text-decoration-line: underline;
   color: var(--text-black);
 }
-#resume .top-right .skills-gallery-container .left h3:hover{
+#resume .top-right .skills-gallery-container .left h3:hover {
   text-decoration: wavy;
 }
 
@@ -10,9 +10,8 @@
   opacity: 1;
 }
 
-
 /* desgin section */
-.tabContents .item .text-item button.more:hover{
+.tabContents .item .text-item button.more:hover {
   background-color: var(--primary-yellow);
   transform: translateY(-5px);
   color: #333;
@@ -20,17 +19,34 @@
 }
 
 #publishing-page .left_info .link a button:hover,
-#team-pj .left_info .link a button:hover{
+#team-pj .left_info .link a button:hover {
   background-color: var(--primary-yellow);
   /* outline:  4px dotted var(--secondary); */
   /* outline-offset: -2px; */
   color: var(--secondary);
-  font-family: 'Paperlogy-7Bold';
+  font-family: "Paperlogy-7Bold";
   transform: translateX(5px);
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%
+  );
   border: none;
   padding: 5px;
 }
 
+/* modal */
+.namecard-content .modal-sec a h6:hover {
+  text-align: center;
+  background-color: #cc0635;
+  color: white;
+  font-family: "Paperlogy-4Regular";
+  margin-left: 580px;
+  transform: rotate(-15deg);
+  transition: 0.5s ease;
+  border-radius: 50px;
+}
