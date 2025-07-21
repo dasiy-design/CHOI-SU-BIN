@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
@@ -75,13 +81,76 @@
             포토샵을 활용하여 스크랩형식으로 다이어리<br />
             디자인을 하였습니다.
           </p>
-          <img src="/assets/images/design/diary.jpg" alt="sb logo" />
+          <img src="/assets/images/design/diary.jpg" alt="" />
         </div>
         <div class="modal-sec">
           <h3>Mockup</h3>
           <div class="pic">
             <img src="/assets/images/design/mockup/diary1.png" />
             <img src="/assets/images/design/mockup/diary2.png" alt="" />
+          </div>
+          <div class="modal-footer">
+            <p>
+              이미지 소스 이외 모든 것은 직접 디자인하였으며, 주어진 작업
+              사이즈에 맞게 제작하였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="modal-custom-button" href="#myModal3">more</button>
+
+    <!-- The Modal -->
+    <div id="myModal3" class="modal-custom">
+      <!-- Modal content -->
+      <div class="cardnews-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2>
+            K-직장인이 <em>월요일보다<br />수요일이 더 피곤한 이유</em>
+          </h2>
+          <strong>100% personal</strong>
+        </div>
+        <div class="modal-body">
+          <p>
+            평소 취미로 다이어리에 스크랩을 하고 있어<br />
+            포토샵을 활용하여 스크랩형식으로 다이어리<br />
+            디자인을 하였습니다.
+          </p>
+          <img src="/assets/images/design/mockup/cardnews.png" alt="" />
+        </div>
+        <div class="modal-sec">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/images/main.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/7.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/8.png" alt="" />
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <p>
@@ -192,5 +261,15 @@
     </div>
 
     <script src="/assets/js/modal.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
   </body>
 </html>
