@@ -15,10 +15,15 @@
 
 /* modal css */
 @import url(/assets/css/modal-common.css);
+@import url(/assets/css/popup.css);
+@import url(/assets/css/cardnews.css);
 @import url(/assets/css/namecard.css);
-@import url(/assets/css/diary.css);
-@import url(/assets/css/homerunball.css);
 @import url(/assets/css/bose.css);
+@import url(/assets/css/3service.css);
+@import url(/assets/css/3dtext.css);
+@import url(/assets/css/homerunball.css);
+@import url(/assets/css/mitte.css);
+@import url(/assets/css/diary.css);
 
 :root {
   --primary-green: #67fc6b;
@@ -57,6 +62,10 @@ a {
 em {
   font-style: none;
 }
+/* button{
+  border: none;
+  outline: none;
+} */
 
 /* cdn */
 

@@ -1,0 +1,39 @@
+/* modal common */
+
+.mitte-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(/assets/images/bg-m.png);
+  background-size: cover;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mitte-content .modal-header h2 {
+  color: #d08e57;
+}
+.mitte-content .modal-body p {
+  color: white;
+}
+.mitte-content .modal-body img {
+  position: absolute;
+  width: 260px;
+}
+.mitte-content .modal-sec {
+  background-color: white;
+}
+.mitte-content .modal-sec .pic {
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 2fr;
+}
+
+.mitte-content .modal-sec h3 {
+  background-color: #2e180a;
+  color: white;
+}

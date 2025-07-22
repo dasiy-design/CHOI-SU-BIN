@@ -1,0 +1,33 @@
+/* modal common */
+
+.textPoster-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00a8ce;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textPoster-content .modal-header h2 {
+  color: #ffd52b;
+}
+.textPoster-content .modal-body p {
+  color: white;
+}
+.textPoster-content .modal-body img {
+  position: absolute;
+  width: 300px;
+}
+.textPoster-content .modal-sec {
+  background-color: white;
+}
+.textPoster-content .modal-sec h3 {
+  background-color: #e4e4e4;
+  color: #444;
+}

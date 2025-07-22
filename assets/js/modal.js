@@ -26,3 +26,22 @@ window.onclick = function (event) {
     }
   }
 };
+
+// modal cardnews button click
+const container = document.querySelector(".container");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+// 다음 슬라이드 이동버튼 설정
+next.addEventListener("click", () => {
+  const slides = document.querySelectorAll(".slide");
+
+  container.append(slides[0]);
+});
+
+// 이전 슬라이드 이동버튼 설정
+prev.addEventListener("click", () => {
+  const slides = document.querySelectorAll(".slide");
+
+  container.prepend(slides[slides.length - 1]);
+});

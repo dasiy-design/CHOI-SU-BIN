@@ -1,0 +1,44 @@
+.service-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(/assets/images/bg-3.png);
+  background-size: contain;
+
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 1400px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  margin-top: 120px;
+  display: flex;
+  width: 1400px;
+  align-items: center;
+}
+.service-content .modal-header h2 {
+  font-family: "yg-jalnan";
+  color: white;
+}
+.service-content .modal-body p {
+  color: white;
+}
+.service-content .modal-body img {
+  width: 430px;
+}
+.service-content .modal-sec h3 {
+  background-color: #18b0b5;
+}
+.service-content .modal-sec {
+  background-color: white;
+}
+.service-content .modal-sec .pic {
+  height: 800px;
+}

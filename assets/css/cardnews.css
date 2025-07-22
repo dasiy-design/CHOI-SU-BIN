@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff38d;
+  background-color: #ffe9e9;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -15,29 +15,81 @@
 }
 
 .cardnews-content .modal-header h2 {
-  color: #ff4546;
+  color: var(--text-black);
+}
+.cardnews-content .modal-header h2 em {
+  color: #507f8b;
 }
 .cardnews-content .modal-body p {
   color: var(--text-black);
 }
 .cardnews-content .modal-body img {
   position: absolute;
-  width: 520px;
+  width: 500px;
 }
 .cardnews-content .modal-sec {
   background-color: white;
 }
-.cardnews-content .modal-sec .swiper {
-  width: 100%;
-  height: 100%;
+.cardnews-content .modal-sec .container {
+  /* overflow: hidden; */
+  width: 1200px;
+  height: 800px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-left: 100px;
 }
-
-.cardnews-content .modal-sec .swiper-slide {
-  background-position: center;
-  background-size: cover;
+.cardnews-content .modal-sec .container .slide {
+  transition: 0.5s;
+  width: 200px;
+  box-sizing: 0 10px 50px gray;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease-in-out;
 }
-
-.cardnews-content .modal-sec .swiper-slide img {
-  display: block;
-  width: 800px;
+.cardnews-content .modal-sec .container .slide img {
+  width: 400px;
+  height: 400px;
+  box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.cardnews-content .modal-sec .container .slide:nth-of-type(1),
+.slide:nth-of-type(2) {
+  transform: translate(calc(-50% * 5.1), -50%) translateZ(-100px);
+  opacity: 0.5;
+}
+.cardnews-content .modal-sec .container .slide:nth-of-type(3) {
+  transform: translate(calc(-50% * 3.1), -50%) translateZ(-50px);
+  opacity: 0.8;
+}
+.cardnews-content .modal-sec .container .slide:nth-of-type(4) {
+  transform: translate(calc(-50% * 1.1), -50%) translateZ(50px);
+}
+.cardnews-content .modal-sec .container .slide:nth-of-type(5) {
+  transform: translate(calc(-50% * -0.9), -50%) translateZ(-50px);
+  opacity: 0.8;
+}
+.cardnews-content .modal-sec .container .slide:nth-of-type(6),
+.slide:nth-of-type(7) {
+  transform: translate(calc(-50% * -2.9), -50%) translateZ(-100px);
+  opacity: 0.5;
+}
+.cardnews-content .modal-sec .container button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%);
+  gap: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: "Paperlogy-9Black";
+  border-radius: 8px;
+  color: var(--text-black);
 }
