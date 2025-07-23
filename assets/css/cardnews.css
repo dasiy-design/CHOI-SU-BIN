@@ -23,6 +23,19 @@
 .cardnews-content .modal-body p {
   color: var(--text-black);
 }
+.cardnews-content .modal-sec a h6 {
+  width: 200px;
+  border-radius: 0px;
+  font-size: 22px;
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(#c92e53, #2c3044);
+  color: white;
+  font-family: "Paperlogy-4Regular";
+  margin: 0 580px;
+  transform: rotate(5deg);
+}
+
 .cardnews-content .modal-body img {
   position: absolute;
   width: 500px;

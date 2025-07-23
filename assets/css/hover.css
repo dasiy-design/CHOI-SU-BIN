@@ -6,10 +6,6 @@
   text-decoration: wavy;
 }
 
-#resume .right .img .gallery ul.thumbs li:hover {
-  opacity: 1;
-}
-
 /* desgin section */
 .tabContents .item .text-item button.more:hover {
   background-color: var(--primary-yellow);
@@ -17,12 +13,29 @@
   color: #333;
   transition: 0.3s ease-in;
 }
+#design-page .left_info .link a button:hover,
+#team-pj .left_info .link a button:hover {
+  background-color: var(--primary-yellow);
+  color: var(--secondary);
+  font-family: "Paperlogy-7Bold";
+  transform: translateX(5px);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%
+  );
+  border: none;
+  padding: 5px;
+}
 
+/* publishing section */
 #publishing-page .left_info .link a button:hover,
 #team-pj .left_info .link a button:hover {
   background-color: var(--primary-yellow);
-  /* outline:  4px dotted var(--secondary); */
-  /* outline-offset: -2px; */
   color: var(--secondary);
   font-family: "Paperlogy-7Bold";
   transform: translateX(5px);
@@ -47,6 +60,16 @@
   font-family: "Paperlogy-4Regular";
   margin-left: 580px;
   transform: rotate(-15deg);
+  transition: 0.5s ease;
+  border-radius: 50px;
+}
+.cardnews-content .modal-sec a h6:hover {
+  text-align: center;
+  background: linear-gradient(#c92e53, #e2ae64);
+  color: white;
+  font-family: "Paperlogy-4Regular";
+  margin-left: 580px;
+  transform: rotate(-5deg);
   transition: 0.5s ease;
   border-radius: 50px;
 }
