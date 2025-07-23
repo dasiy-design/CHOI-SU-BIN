@@ -225,19 +225,22 @@
 #publishing-page .boardlife .left_info .caption p {
   font-family: "Baloo 2", sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 28px;
 }
 #publishing-page .boardlife .left_info .caption p em {
   color: #fb9225;
   margin-right: 10px;
   font-weight: 800;
+  font-size: 24px;
 }
 #publishing-page .boardlife .left_info .caption h3 {
   font-family: "Baloo 2", sans-serif;
   font-weight: 800;
-  font-size: 26px;
+  font-size: 24px;
   padding: 40px 0;
   line-height: 1;
+  /* font-family: "Paperlogy-4Regular"; */
+  color: #cccccc;
 }
 #publishing-page .boardlife .left_info .caption strong {
   color: #4a90e2;
@@ -247,45 +250,6 @@
   font-size: 80px;
   font-style: normal;
 }
-
-#publishing-page .boardlife .right_mockup {
-  animation: none;
-  margin-top: -50px;
+#publishing-page .boardlife .left_info .caption strong span {
+  color: #fb9225;
 }
-#publishing-page .boardlife .right_mockup .mockup img {
-  border: 1px solid #000;
-  transform: rotate(0);
-  margin-left: 100px;
-  animation: none;
-  margin-top: -150px;
-  width: 300px;
-}
-
-#publishing-page .boardlife .right_mockup .app .img-wrapper {
-  position: relative;
-}
-
-/* #publishing-page .boardlife .right_mockup .app .img-wrapper .bf1, .bf2, .bf3{
-  position: absolute;
-  left: 0;
-  box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.5);
-  width: 420px;
-  margin-left: 30px;
-}
-.bf1{
-  position: absolute;
-  top: 0px;
-  z-index: 2;
-}
-.bf2{
-  position: absolute;
-  top: 150px;
-  left: 50px;
-  z-index: 3;
-}
-.bf3{
-  position: absolute;
-  top: 300px;
-  left: 150px;
-  z-index: 4;
-} */
