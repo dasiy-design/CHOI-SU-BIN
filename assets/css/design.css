@@ -1,7 +1,8 @@
 .design-section h3 {
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   color: var(--primary-green);
+  margin-bottom: 80px;
 }
 /* grahpic design */
 .design-grid .design-item {
@@ -88,19 +89,26 @@
 }
 .uiux-design .uiux-container .item img {
   width: 500px;
+  height: 380px;
   margin-bottom: 50px;
 }
 .uiux-design .uiux-container .item .text {
 }
 .uiux-design .uiux-container .item .text h5 {
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Paperlogy-8ExtraBold";
+  margin-bottom: 30px;
 }
 .uiux-design .uiux-container .item .text p {
-  font-size: 20px;
+  font-size: 26px;
   color: var(--text-gray8);
   font-family: "Paperlogy-5Medium";
 }
+.uiux-design .uiux-container .item .text p.date {
+  color: var(--secondary);
+}
 .uiux-design .uiux-container .item .text p span {
-  color: var(--primary--green);
+  color: var(--primary-green);
+  font-family: "Paperlogy-7Bold";
+  margin-right: 10px;
 }

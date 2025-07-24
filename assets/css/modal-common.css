@@ -46,6 +46,7 @@
   font-weight: bold;
   top: 120px;
   right: 300px;
+  z-index: 10;
 }
 span.close-modal:hover,
 span.close-modal:focus {

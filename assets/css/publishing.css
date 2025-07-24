@@ -42,15 +42,14 @@
 }
 
 #publishing-page {
-  padding: 160px 0;
+  padding: 160px 0 200px;
 }
-#publishing-page .page-index {
+#publishing-page {
   display: block;
   margin-left: 30px;
   height: 100px;
   width: 200px;
 }
-
 #publishing-page .left_info {
   display: flex;
   flex-direction: column;
