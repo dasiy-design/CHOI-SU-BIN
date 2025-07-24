@@ -56,7 +56,6 @@
   flex-direction: column;
   max-width: 400px;
   height: 600px;
-  margin-top: 50px;
 }
 #publishing-page .swiper .left_info .caption h3 {
   font-size: 36px;
@@ -69,7 +68,7 @@
   font-size: 22px;
   color: var(--text-gray5);
   font-family: "Paperlogy-5Medium";
-  margin-right: 30px;
+  margin: 0 30px;
 }
 
 /* 메디힐 */
@@ -151,7 +150,6 @@
   margin-top: -50px;
 }
 #publishing-page .aespa .left_info .caption p {
-  /* font-family: "Bitcount Grid Double", system-ui; */
   font-family: "Tektur", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -238,9 +236,7 @@
   font-weight: 800;
   font-size: 24px;
   padding: 40px 0;
-  line-height: 1;
-  /* font-family: "Paperlogy-4Regular"; */
-  color: #cccccc;
+  color: #ccc;
 }
 #publishing-page .boardlife .left_info .caption strong {
   color: #4a90e2;
@@ -252,4 +248,80 @@
 }
 #publishing-page .boardlife .left_info .caption strong span {
   color: #fb9225;
+}
+#publishing-page .boardlife .right_mockup .video {
+  transform: skew(5deg, 2deg);
+}
+#publishing-page .boardlife .right_mockup video {
+  width: 300px;
+}
+
+/* team beepick */
+/* #publishing-page .mmca .left_info {
+  margin-top: -50px;
+} */
+#publishing-page .mmca .left_info .caption p {
+  font-family: "S-CoreDream-4Regular";
+  font-size: 24px;
+  color: #222;
+  margin-top: 30px;
+}
+#publishing-page .mmca .left_info .caption p em {
+  font-family: "S-CoreDream-5Medium";
+  color: #008484;
+  margin-right: 10px;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+}
+#publishing-page .mmca .left_info .caption h3 {
+  font-family: "S-CoreDream-4Regular";
+  font-size: 24px;
+  padding-top: 40px;
+}
+#publishing-page .left_info .caption strong {
+  font-family: "S-CoreDream-8Heavy";
+  color: var(--text-black);
+  text-shadow: none;
+  font-size: 50px;
+  font-style: normal;
+}
+#publishing-page .aespa .right_mockup {
+  animation: none;
+  margin-top: -40px;
+}
+#publishing-page .aespa .right_mockup .pic .img-wrapper {
+  position: relative;
+  height: 500px;
+}
+#publishing-page .aespa .right_mockup .pic .img-wrapper .a1,
+.a2,
+.a3 {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.5);
+  width: 420px;
+  margin-left: 30px;
+  animation-direction: alternate;
+}
+.a1 {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  animation: a1-ani 3s infinite;
+}
+.a2 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  z-index: 3;
+  animation: a2-ani 4s infinite;
+}
+.a3 {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  z-index: 4;
+  animation: a3-ani 4s infinite;
 }
