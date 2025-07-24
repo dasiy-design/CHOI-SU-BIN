@@ -4,6 +4,7 @@
   color: var(--primary-green);
   margin-bottom: 80px;
 }
+
 /* grahpic design */
 .design-grid .design-item {
   display: grid;

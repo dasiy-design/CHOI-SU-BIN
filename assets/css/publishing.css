@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -42,7 +34,7 @@
 }
 
 #publishing-page {
-  padding: 160px 0 200px;
+  padding: 160px 0;
 }
 #publishing-page {
   display: block;
@@ -110,7 +102,6 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  /* margin: 0 0 0 100px; */
   margin-left: 200px;
   animation: pc-dung 3s infinite;
 }
@@ -152,7 +143,6 @@
   font-family: "Tektur", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  /* color: #8CFC38; */
   color: #333;
 }
 #publishing-page .aespa .left_info .caption p em {
