@@ -32,7 +32,8 @@
 }
 
 /* publishing section */
-a button:hover {
+#publishing-page .left_info .link a button:hover,
+#team-pj .left_info .link a button:hover {
   background-color: var(--primary-yellow);
   color: var(--secondary);
   font-family: "Paperlogy-7Bold";

@@ -78,12 +78,10 @@
 /* uiux design */
 .uiux-design {
   display: block;
-  margin: 100px;
 }
 .uiux-design .uiux-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .uiux-design .uiux-container .item {
 }
@@ -111,4 +109,5 @@
   color: var(--primary-green);
   font-family: "Paperlogy-7Bold";
   margin-right: 10px;
+  width: 800px;
 }
