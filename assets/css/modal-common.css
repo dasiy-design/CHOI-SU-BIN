@@ -1,3 +1,19 @@
+/* modal button */
+.design-item .item .text-item button.modal-custom-button {
+  border: none;
+  background-color: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Paperlogy-7Bold";
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px;
+}
+
 .modal-custom {
   display: none;
   position: fixed;
@@ -25,16 +41,18 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .close-modal {
-  position: absolute;
-  color: white;
+  position: fixed;
+  color: var(--secondary);
+  /* color: var(--primary-green); */
   font-size: 50px;
   font-weight: bold;
-  top: 30px;
-  right: 40px;
+  top: 150px;
+  right: 100px;
 }
 span.close-modal:hover,
 span.close-modal:focus {
-  color: #333;
+  /* color: var(--secondary); */
+  color: var(--primary-green);
   text-decoration: none;
   cursor: pointer;
   transform: 3s ease-in-out;
@@ -111,4 +129,5 @@ span.close-modal:focus {
   padding: 50px;
   margin-top: 50px;
   text-align: center;
+  width: 1400px;
 }

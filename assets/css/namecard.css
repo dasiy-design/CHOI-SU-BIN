@@ -23,6 +23,7 @@
 .namecard-content .modal-header h2 {
   color: #3e3e3e;
   font-family: "Paperlogy-9Black";
+  width: 800px;
 }
 .namecard-content .modal-body p {
   color: var(--text-black);
