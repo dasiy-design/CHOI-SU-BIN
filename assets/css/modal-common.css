@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -43,15 +42,13 @@
 .close-modal {
   position: fixed;
   color: var(--secondary);
-  /* color: var(--primary-green); */
   font-size: 50px;
   font-weight: bold;
-  top: 150px;
-  right: 100px;
+  top: 120px;
+  right: 300px;
 }
 span.close-modal:hover,
 span.close-modal:focus {
-  /* color: var(--secondary); */
   color: var(--primary-green);
   text-decoration: none;
   cursor: pointer;

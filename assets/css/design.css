@@ -1,3 +1,8 @@
+.design-section h3 {
+  font-size: 32px;
+  text-align: center;
+  color: var(--primary-green);
+}
 /* grahpic design */
 .design-grid .design-item {
   display: grid;
@@ -72,13 +77,30 @@
 /* uiux design */
 .uiux-design {
   display: block;
+  margin: 100px;
 }
 .uiux-design .uiux-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .uiux-design .uiux-container .item {
 }
 .uiux-design .uiux-container .item img {
-  width: 800px;
+  width: 500px;
+  margin-bottom: 50px;
+}
+.uiux-design .uiux-container .item .text {
+}
+.uiux-design .uiux-container .item .text h5 {
+  font-size: 32px;
+  font-family: "Paperlogy-8ExtraBold";
+}
+.uiux-design .uiux-container .item .text p {
+  font-size: 20px;
+  color: var(--text-gray8);
+  font-family: "Paperlogy-5Medium";
+}
+.uiux-design .uiux-container .item .text p span {
+  color: var(--primary--green);
 }
