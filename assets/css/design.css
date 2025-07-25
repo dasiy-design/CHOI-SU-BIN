@@ -2,7 +2,7 @@
   font-size: 40px;
   text-align: center;
   color: var(--primary-green);
-  margin-bottom: 80px;
+  margin: 80px 0;
 }
 
 /* grahpic design */
@@ -81,8 +81,10 @@
   display: block;
 }
 .uiux-design .uiux-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 250px 400px;
+  margin: 0 150px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .uiux-design .uiux-container .item {
 }
@@ -92,14 +94,22 @@
   margin-bottom: 50px;
 }
 .uiux-design .uiux-container .item .text {
+  width: 500px;
 }
 .uiux-design .uiux-container .item .text h5 {
   font-size: 36px;
   font-family: "Paperlogy-8ExtraBold";
   margin-bottom: 30px;
 }
+/* .uiux-design .uiux-container .item .text h5 em {
+  font-size: 20px;
+  color: var(--text-gray8);
+  font-style: normal;
+  margin-left: 50px;
+  font-family: "Paperlogy-4Regular";
+} */
 .uiux-design .uiux-container .item .text p {
-  font-size: 26px;
+  font-size: 22px;
   color: var(--text-gray8);
   font-family: "Paperlogy-5Medium";
 }
@@ -111,4 +121,10 @@
   font-family: "Paperlogy-7Bold";
   margin-right: 10px;
   width: 800px;
+}
+.uiux-design .uiux-container .item .link {
+  margin-top: 50px;
+}
+.uiux-design .uiux-container .item .link a button {
+  padding: 5px;
 }
