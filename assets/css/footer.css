@@ -29,3 +29,9 @@ footer em {
   font-style: italic;
   font-size: 14px;
 }
+
+footer span a {
+  color: var(--secondary);
+  font-family: "Paperlogy-5Medium";
+  font-size: 18px;
+}

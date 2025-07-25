@@ -5,7 +5,7 @@
 
 .swiper {
   width: 100%;
-  height: 100%;
+  width: 100%;
 }
 .swiper-slide {
   width: 400px;
@@ -40,9 +40,9 @@
 
 #publishing-page {
   display: block;
-  margin: 0 30px 160px;
-  /* padding: 160px; */
-  height: 1200px;
+  margin: 200px 30px 100px;
+  /* padding: 80px; */
+  height: 1000px;
 }
 #publishing-page .left_info {
   display: flex;

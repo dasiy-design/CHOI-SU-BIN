@@ -2,7 +2,11 @@
   font-size: 40px;
   text-align: center;
   color: var(--primary-green);
-  margin: 80px 0;
+  margin: 40px 0;
+  font-style: italic;
+}
+.design-section h3 em {
+  color: var(--secondary);
 }
 
 /* grahpic design */
@@ -79,10 +83,11 @@
 /* uiux design */
 .uiux-design {
   display: block;
+  margin-bottom: 40px;
 }
 .uiux-design .uiux-container {
   display: grid;
-  gap: 250px 400px;
+  gap: 250px;
   margin: 0 150px;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -101,13 +106,13 @@
   font-family: "Paperlogy-8ExtraBold";
   margin-bottom: 30px;
 }
-/* .uiux-design .uiux-container .item .text h5 em {
+.uiux-design .uiux-container .item .text h5 em {
   font-size: 20px;
   color: var(--text-gray8);
   font-style: normal;
   margin-left: 50px;
   font-family: "Paperlogy-4Regular";
-} */
+}
 .uiux-design .uiux-container .item .text p {
   font-size: 22px;
   color: var(--text-gray8);
