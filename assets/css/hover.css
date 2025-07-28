@@ -7,13 +7,7 @@
 }
 
 /* desgin section */
-.tabContents .item .text-item button.more:hover {
-  background-color: var(--primary-yellow);
-  transform: translateY(-5px);
-  color: #333;
-  transition: 0.3s ease-in;
-}
-#uiux-page .left_info .link a button:hover {
+.left_info .link a button:hover {
   background-color: var(--primary-yellow);
   color: var(--secondary);
   font-family: "Paperlogy-7Bold";

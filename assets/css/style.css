@@ -87,6 +87,18 @@ body {
   font-family: "Paperlogy-8ExtraBold";
   overflow-x: hidden;
 }
+.hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 1.2s ease-out;
+  margin: 100px 0;
+  padding: 50px;
+  border-radius: 10px;
+}
+div.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .sec1 {
   background-color: var(--bg-green);
   width: 100vw;

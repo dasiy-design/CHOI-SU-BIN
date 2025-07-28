@@ -15,22 +15,25 @@ footer {
   font-weight: 400;
   padding: 80px 0;
 }
-footer p {
+footer p.footer_text {
   text-align: center;
   line-height: 1.5;
+  position: absolute;
+  top: 35px;
+  left: 700px;
 }
-footer p strong {
+footer p.footer_text strong {
   color: var(--secondary);
   font-family: "Paperlogy-7Bold";
   font-weight: 700;
   font-size: 18px;
 }
-footer em {
+footer p.footer_text em {
   font-style: italic;
   font-size: 14px;
 }
 
-footer span a {
+footer p.footer_text span a {
   color: var(--secondary);
   font-family: "Paperlogy-5Medium";
   font-size: 18px;

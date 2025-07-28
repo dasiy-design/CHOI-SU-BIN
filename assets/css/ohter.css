@@ -1,20 +1,18 @@
 #other-design .design-grid .design-item {
-  border: 1px solid #000;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  margin-bottom: 160px;
 }
 
 #other-design .design-item .item {
   display: block;
   position: relative;
-  border: 1px solid blue;
   margin: 40px;
 }
 #other-design .design-item .item .text-item:hover {
   opacity: 1;
   background-color: rgba(103, 252, 107, 0.8);
-  width: 320px;
   height: 300px;
   position: absolute;
   top: 0;

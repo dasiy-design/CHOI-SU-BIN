@@ -39,10 +39,13 @@
 }
 
 #publishing-page {
+  padding: 160px 0;
+}
+#publishing-page .page-index {
   display: block;
-  margin: 200px 30px 100px;
-  /* padding: 80px; */
-  height: 1000px;
+  margin-left: 30px;
+  height: 100px;
+  width: 200px;
 }
 #publishing-page .left_info {
   display: flex;

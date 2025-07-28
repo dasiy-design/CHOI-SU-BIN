@@ -1,14 +1,18 @@
-.design-section h3 {
+.design-section h3,
+.design-grid h3 {
   font-size: 40px;
   text-align: center;
   color: var(--primary-green);
   margin: 40px 0;
   font-style: italic;
 }
-.design-section h3 em {
+.design-section h3 em,
+.design-grid h3 em {
   color: var(--secondary);
 }
-
+#desigm-page {
+  padding: 160px 0;
+}
 /* grahpic design */
 .design-grid .design-item {
   display: grid;
