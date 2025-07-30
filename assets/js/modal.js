@@ -1,47 +1,41 @@
-var btn = document.querySelectorAll("button.modal-custom-button");
-var modals = document.querySelectorAll(".modal-custom");
-var spans = document.getElementsByClassName("close-modal");
+function animateSkillBars() {
+  const skillPercents = document.querySelectorAll("#resume .skill_percentage");
 
-for (var i = 0; i < btn.length; i++) {
-  btn[i].onclick = function (e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
-    modal.style.display = "block";
-  };
+  skillPercents.forEach((span) => {
+    const parentBar = span.closest(".skill_bar");
+    const barTop = parentBar.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-  spans[i].onclick = function () {
-    for (var index in modals) {
-      if (typeof modals[index].style !== "undefined")
-        modals[index].style.display = "none";
+    if (barTop < windowHeight && !span.classList.contains("animated")) {
+      const percentText = span.innerText.trim();
+      const targetPercent = parseInt(percentText.replace("%", ""));
+      span.classList.add("animated");
+
+      // 스킬바 너비 설정
+      span.style.width = targetPercent + "%";
+
+      // 숫자 애니메이션
+      let current = 0;
+      const duration = 1500; // ms
+      const frameRate = 60;
+      const totalFrames = Math.round((duration / 1000) * frameRate);
+      let frame = 0;
+
+      const counter = setInterval(() => {
+        frame++;
+        const progress = frame / totalFrames;
+        const currentPercent = Math.round(targetPercent * progress);
+
+        span.innerText = currentPercent + "%";
+
+        if (frame >= totalFrames) {
+          clearInterval(counter);
+          span.innerText = targetPercent + "%";
+        }
+      }, 1000 / frameRate);
     }
-  };
+  });
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target.classList.contains("modal-custom")) {
-    for (var index in modals) {
-      if (typeof modals[index].style !== "undefined")
-        modals[index].style.display = "none";
-    }
-  }
-};
-
-// modal cardnews button click
-const container = document.querySelector(".container");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
-// 다음 슬라이드 이동버튼 설정
-next.addEventListener("click", () => {
-  const slides = document.querySelectorAll(".slide");
-
-  container.append(slides[0]);
-});
-
-// 이전 슬라이드 이동버튼 설정
-prev.addEventListener("click", () => {
-  const slides = document.querySelectorAll(".slide");
-
-  container.prepend(slides[slides.length - 1]);
-});
+window.addEventListener("scroll", animateSkillBars);
+window.addEventListener("load", animateSkillBars);

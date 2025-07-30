@@ -44,7 +44,7 @@
   line-height: 1.5;
 }
 .item .text h5 strong {
-  color: var(--primary-green);
+  color: var(--secondary);
   font-family: "Paperlogy-5Medium";
   font-size: 18px;
   margin-left: 100px;

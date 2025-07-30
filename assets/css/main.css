@@ -28,7 +28,6 @@ main {
   justify-content: center;
   position: relative;
   margin: 0 auto;
-  padding-bottom: 5rem;
 }
 #resume .resume-main-content {
   display: flex;
@@ -136,13 +135,11 @@ main {
 #resume .top-right .skills-gallery-container .left .skill-item {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   align-items: center;
 }
 #resume .top-right .skills-gallery-container .left .skill-item img {
   width: 30px;
   height: 30px;
-  border: 1px solid #000;
 }
 #resume .top-right .skills-gallery-container .left .skill-item .skill_bar {
   /* border: 1px solid #000; */
@@ -150,6 +147,8 @@ main {
   background-color: #d2ffc9;
   border-radius: 50px;
   margin: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 #resume
@@ -159,7 +158,7 @@ main {
   .skill-item
   span.skill_percentage {
   display: inline-block;
-  width: 90%;
+  width: 0;
   height: 28px;
   background-color: var(--primary-green);
   border-radius: 50px;
@@ -168,6 +167,7 @@ main {
   padding-right: 10px;
   color: var(--primary-yellow);
   font-family: "Paperlogy-5Medium";
+  transition: width 1.5s ease-in-out;
 }
 #resume .top-right .skills-gallery-container .left .other {
   margin: 30px 0;
@@ -270,4 +270,5 @@ main {
   font-family: "Paperlogy-8ExtraBold";
   font-size: 20px;
   font-style: normal;
+  text-align: right;
 }
