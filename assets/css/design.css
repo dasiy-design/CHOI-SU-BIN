@@ -137,3 +137,18 @@
 .uiux-design .uiux-container .item .link a button {
   padding: 5px;
 }
+
+.item .text-item button.modal-custom-button a {
+  border: none;
+  background-color: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Paperlogy-7Bold";
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

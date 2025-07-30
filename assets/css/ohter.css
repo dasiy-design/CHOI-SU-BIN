@@ -43,6 +43,12 @@
   font-weight: 500;
   line-height: 1.5;
 }
+.item .text h5 strong {
+  color: var(--primary-green);
+  font-family: "Paperlogy-5Medium";
+  font-size: 18px;
+  margin-left: 100px;
+}
 #other-design .design-item .text img {
   width: 30px;
   height: 30px;
