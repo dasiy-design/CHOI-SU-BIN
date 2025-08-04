@@ -1,10 +1,15 @@
+footer {
+  background-color: var(--primary-yellow);
+  width: 100vw;
+}
 footer p.footer_text {
   text-align: center;
   line-height: 1.5;
-  /* position: absolute; */
   margin: 0 auto;
   max-width: 1200px;
-  padding-top: 35px;
+  padding: 35px;
+  color: var(--text-gray5);
+  font-family: "Paperlogy-5Medium";
 }
 footer p.footer_text strong {
   color: var(--secondary);

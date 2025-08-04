@@ -95,18 +95,54 @@ svg {
   z-index: 1;
   width: 120px;
 }
-
-.container h5 {
+h5 {
   position: absolute;
   bottom: 30px;
   left: 40%;
   font-size: 25px;
   color: #51ff2e;
-  /* font-family: "Sonsie One"; */
   font-family: "Paperlogy-4Regular";
   font-weight: normal;
+  font-family: "Sonsie One", cursive;
   animation: click infinite 3s;
 }
+/* .mouse {
+  position: relative;
+  left: 40%;
+  animation: scroll 3s infinite;
+}
+.mouse .circle {
+  border-radius: 50px 50px 10px 10px;
+  border: 2px solid #a77459;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  bottom: 50px;
+}
+.mouse .circle .line {
+  height: 10px;
+  border: 1px solid #a77459;
+  position: absolute;
+  left: 45%;
+  top: 18px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+} */
 
 @keyframes writeText {
   0% {
