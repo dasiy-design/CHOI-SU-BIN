@@ -40,6 +40,7 @@ main {
   gap: 20px;
   width: 360px;
   flex: 1;
+  margin-left: 50px;
 }
 #resume .top-left .mypage h2.profile_image img {
   /* object-fit: cover; */
@@ -213,7 +214,7 @@ main {
   box-shadow: var(--box-shadow);
   border-radius: 20px;
   height: 420px;
-  width: 63%;
+  width: 57%;
 }
 #resume .right .img h3 {
   text-align: left;
