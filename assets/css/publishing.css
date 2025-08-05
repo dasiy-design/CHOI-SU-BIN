@@ -77,7 +77,6 @@
 #publishing-page .mediheal .left_info .caption p {
   font-weight: 500;
   font-size: 24px;
-  /* color: #8CFC38; */
   color: #333;
 }
 #publishing-page .mediheal .left_info .caption p em {
@@ -86,7 +85,7 @@
   font-size: 22px;
   font-style: normal;
   font-family: "Paperlogy-5Medium";
-  font-family: "Paperlogy-7Bold";
+  /* font-family: "Paperlogy-7Bold"; */
 }
 #publishing-page .mediheal .left_info .caption h3 {
   font-size: 28px;
@@ -118,10 +117,10 @@
 .pc {
   position: absolute;
   top: 10%;
-  width: 100%;
+  width: 94%;
   overflow: hidden;
   pointer-events: none;
-  transform: translateX(10px);
+  transform: translate(132px, 101px);
 }
 .video-wrapper {
   width: 78%;
@@ -281,101 +280,7 @@
   font-size: 50px;
   font-style: normal;
 }
-#publishing-page .mockup-container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  animation: none;
-}
-
-#publishing-page .device-wrapper {
-  position: absolute;
-  /* width: 100%;
-  max-width: 1200px;
-  height: 100%; */
-}
-
-/* 공통 device 스타일 */
-#publishing-page .device {
-  position: relative;
-  width: 300px;
-  z-index: 2;
-}
-
-/* 스크린샷 wrapper */
-#publishing-page .screenshot-wrapper {
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  width: 260px;
-  height: 460px;
-  overflow: hidden;
-  z-index: 1;
-  display: flex;
-  gap: 5px;
-}
-
-/* 각 스크린샷 이미지 */
-#publishing-page .screenshot {
-  flex-shrink: 0;
-  width: 260px;
-  height: 460px;
-  object-fit: cover;
-  opacity: 0;
-  border-radius: 10px;
-  z-index: 1;
-  /* 핵심 애니메이션 2개: 스크롤 + 페이드 */
-  animation: scrollCapture 10s ease-in-out infinite,
-    fadeSequence 30s linear infinite;
-  transition: opacity 1s ease;
-}
-/* 디바이스 기기 겹치기 */
-.mac {
-  top: 50px;
-  left: 200px;
-  z-index: 1;
-}
-.pad {
-  top: 100px;
-  left: 350px;
-  z-index: 2;
-}
-.phone {
-  top: 150px;
-  left: 550px;
-  z-index: 3;
-}
-/* 개별 이미지의 시간차 적용 */
-#publishing-page .item1 {
-  animation-delay: 0s, 0s;
-}
-#publishing-page .item2 {
-  animation-delay: 10s, 10s;
-}
-#publishing-page .item3 {
-  animation-delay: 20s, 20s;
-}
-
-/* 애니메이션 정의 */
-@keyframes scrollCapture {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes fadeSequence {
-  0%,
-  30% {
-    opacity: 1;
-  }
-  33.33%,
-  100% {
-    opacity: 0;
-  }
+#publishing-page .mockup {
+  width: 580px;
+  margin: 120px;
 }
