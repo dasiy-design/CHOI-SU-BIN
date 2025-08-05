@@ -14,7 +14,7 @@
 @import url(/assets/css/common.css);
 
 /* modal css */
-@import url(/assets/css/modal-common.css);
+@import url(/assets/css/modalcommon.css);
 @import url(/assets/css/popup.css);
 @import url(/assets/css/cardnews.css);
 @import url(/assets/css/namecard.css);
@@ -26,7 +26,7 @@
 @import url(/assets/css/diary.css);
 
 :root {
-  --primary-green: #67fc6b;
+  --primary-green: #3cff42;
   --primary-yellow: #f8ff64;
   --bg-green: #d9ffda;
   --secondary: #a77459;
