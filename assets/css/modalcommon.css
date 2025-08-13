@@ -224,6 +224,9 @@ span.close-modal:focus {
 
 /* 모바일 반응형 (최대 767px) */
 @media screen and (max-width: 767px) {
+  #design-page .item .text-item button.modal-custom-button {
+    margin: 20px 80px;
+  }
   .modal-content {
     width: 90%;
     max-width: 100%;
