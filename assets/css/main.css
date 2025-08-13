@@ -21,7 +21,6 @@ main {
   text-align: center;
 }
 #resume .all {
-  /* border: 1px solid #000; */
   max-width: 1600px;
   width: 100%;
   display: block;
@@ -204,7 +203,6 @@ main {
 #resume .skills-gallery-container {
   display: flex;
   width: 100%;
-  /* border: 1px solid #000; */
   justify-content: space-between;
   /* margin-left: 40px; */
 }
@@ -288,8 +286,7 @@ main {
   }
 
   #resume .top-left .mypage h3.name {
-    font-size: 22px;
-    text-align: left;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
@@ -310,14 +307,20 @@ main {
 
   #resume .skills-gallery-container .left,
   #resume .skills-gallery-container .right {
-    width: 90%;
+    width: 400px;
+    height: 420px;
   }
 
   #resume .swiper-slide img {
-    width: 100%;
-    left: 20px;
-    position: static;
+    width: 69%;
+    left: 30px;
+    position: absolute;
     object-fit: cover;
+    height: 300px;
+  }
+  #resume .swiper-slide .title {
+    left: 30px;
+    position: absolute;
   }
 
   #resume .right .img h3 {

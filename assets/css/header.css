@@ -46,3 +46,70 @@
 .indicator.active span {
   opacity: 1;
 }
+
+/* 태블릿 (최대 1024px) */
+@media (max-width: 1024px) {
+  .indicator-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #222; /* 진한 배경 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transform: none;
+  }
+
+  .indicator {
+    width: 40px;
+    height: 6px;
+    background: #4caf50; /* 연한 초록 */
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .indicator.active,
+  .indicator:hover {
+    background: #ffc107; /* 노란색 */
+  }
+
+  .indicator span {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+/* 모바일 (최대 767px) */
+@media (max-width: 767px) {
+  .indicator-container {
+    height: 45px;
+    gap: 20px;
+  }
+
+  .indicator {
+    width: 30px;
+    height: 5px;
+  }
+
+  .indicator span {
+    font-size: 11px;
+    top: 38px;
+  }
+}

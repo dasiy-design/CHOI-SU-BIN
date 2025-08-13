@@ -92,9 +92,9 @@
 /* 태블릿 (최대 1024px) */
 @media screen and (max-width: 1024px) {
   #other-design .design-grid .design-item {
-    grid-template-columns: 1fr;
-    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin: 0 40px;
   }
 
   #other-design .design-item img,
