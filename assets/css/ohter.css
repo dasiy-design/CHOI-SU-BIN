@@ -88,3 +88,72 @@
   align-items: center;
   margin: 20px 40px;
 }
+
+/* 태블릿 (최대 1024px) */
+@media screen and (max-width: 1024px) {
+  #other-design .design-grid .design-item {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 40px;
+  }
+
+  #other-design .design-item img,
+  #other-design .design-item .text,
+  #other-design .design-item .item .text-item {
+    width: 240px;
+    height: 260px;
+  }
+
+  #other-design .design-item .text {
+    height: 80px;
+    font-size: 18px;
+  }
+
+  #other-design .design-item .item {
+    margin: 20px auto;
+  }
+
+  #other-design .design-item .item .text-item {
+    padding: 80px 40px;
+    width: 240px;
+    height: 260px;
+  }
+  #other-design .design-item .item .text-item p {
+    width: 160px;
+    font-size: 16px;
+  }
+
+  #other-design .design-item .item .text-item button.more {
+    width: 90px;
+    padding: 8px;
+    font-size: 14px;
+    margin: 16px 30px;
+  }
+}
+
+/* 모바일 (최대 767px) */
+@media screen and (max-width: 767px) {
+  #other-design .design-grid .design-item {
+    grid-template-columns: 1fr;
+  }
+  #other-design .design-item .item .text-item {
+    width: 100%;
+    max-width: 300px;
+    height: 260px;
+    padding: 40px 20px;
+  }
+
+  #other-design .design-item .item .text-item p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #other-design .design-item .item .text-item button.more {
+    width: 80px;
+    padding: 6px;
+    font-size: 13px;
+    margin: 10px auto;
+    display: block;
+  }
+}

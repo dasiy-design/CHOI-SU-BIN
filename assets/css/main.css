@@ -1,5 +1,5 @@
 html {
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
 }
 
@@ -272,4 +272,162 @@ main {
   font-size: 20px;
   font-style: normal;
   text-align: right;
+}
+
+/* 태블릿 반응형 (768px ~ 1024px) */
+@media screen and (max-width: 1024px) {
+  #resume .resume-main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resume .top-left {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  #resume .top-left .mypage h3.name {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  #resume .top-left .mypage p.icon {
+    justify-content: left;
+  }
+
+  #resume .top-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #resume .skills-gallery-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #resume .skills-gallery-container .left,
+  #resume .skills-gallery-container .right {
+    width: 90%;
+  }
+
+  #resume .swiper-slide img {
+    width: 100%;
+    left: 20px;
+    position: static;
+    object-fit: cover;
+  }
+
+  #resume .right .img h3 {
+    font-size: 20px;
+  }
+
+  #resume .skills-gallery-container .left .skill-box {
+    position: static;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #resume .bottom-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #resume .bottom {
+    width: 90%;
+    margin: 40px auto;
+  }
+}
+
+/* 모바일 반응형 (최대 767px) */
+@media screen and (max-width: 767px) {
+  #resume h1.top {
+    font-size: 24px;
+    margin-left: 0;
+    padding-top: 30px;
+  }
+
+  #resume .top-left {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #resume .top-left .mypage h3.name {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  #resume .top-left .mypage h3.name strong {
+    font-size: 14px;
+  }
+
+  #resume .top-left .mypage p.icon {
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #resume .top-left .spec .edu,
+  #resume .top-left .spec .exp {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #resume .skills-gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resume .skills-gallery-container .left,
+  #resume .skills-gallery-container .right {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  #resume .skills-gallery-container .left .skill-box {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  #resume .skills-gallery-container .left .skill-item .skill_bar {
+    width: 100%;
+  }
+
+  #resume .right .img .gallery {
+    width: 100%;
+    height: auto;
+  }
+
+  #resume .swiper-slide img {
+    height: 200px;
+    width: 300px;
+    left: 20px;
+  }
+
+  #resume .swiper-slide .title {
+    font-size: 14px;
+    top: 170px;
+    padding: 5px;
+  }
+
+  #resume .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    height: auto;
+  }
+
+  #resume .bottom strong {
+    margin-bottom: 5px;
+  }
+
+  #resume .bottom em {
+    font-size: 16px;
+  }
 }

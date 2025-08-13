@@ -1,5 +1,4 @@
 /* modal common */
-
 .textPoster-content {
   position: relative;
   display: flex;
@@ -30,4 +29,82 @@
 .textPoster-content .modal-sec h3 {
   background-color: #e4e4e4;
   color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+  .textPoster-content {
+    max-width: 90vw;
+    padding: 20px;
+  }
+
+  .textPoster-content .modal-header h2 {
+    font-size: 36px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .textPoster-content .modal-body p {
+    font-size: 18px;
+    padding: 15px 20px;
+    position: static;
+    text-align: center;
+    margin: 10px 0;
+    z-index: auto;
+  }
+
+  .textPoster-content .modal-body img {
+    position: static;
+    width: 50%;
+    max-width: 200px;
+    margin: 0 auto 15px;
+    box-shadow: none;
+    display: block;
+  }
+
+  .textPoster-content .modal-sec {
+    padding: 20px;
+  }
+
+  .textPoster-content .modal-sec h3 {
+    font-size: 20px;
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textPoster-content {
+    max-width: 95vw;
+    padding: 15px 10px;
+  }
+
+  .textPoster-content .modal-header h2 {
+    font-size: 28px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .textPoster-content .modal-body p {
+    font-size: 16px;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .textPoster-content .modal-body img {
+    width: 70%;
+    max-width: 150px;
+    margin: 0 auto 10px;
+    position: static;
+    box-shadow: none;
+    display: block;
+  }
+
+  .textPoster-content .modal-sec {
+    padding: 15px 10px;
+  }
+
+  .textPoster-content .modal-sec h3 {
+    font-size: 18px;
+    padding: 10px 12px;
+  }
 }
