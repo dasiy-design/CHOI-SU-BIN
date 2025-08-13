@@ -1,7 +1,6 @@
 @import url(/assets/css/font.css);
 
 body {
-  /* background-color: #ffeb3b; */
   background-color: #faff9b;
 }
 .container {
@@ -16,11 +15,13 @@ body {
 }
 
 svg {
-  height: 220px;
+  width: 100%;
+  max-width: 800px;
   top: 250px;
   left: 100px;
-  position: absolute;
   z-index: 5;
+  display: block;
+  margin: 0 auto;
 }
 
 .name {
@@ -34,6 +35,7 @@ svg {
   animation: writeText infinite 5s;
   font-family: "Sonsie One", system-ui;
   z-index: 10;
+  margin-bottom: 40px;
 }
 
 .letter {
@@ -93,7 +95,7 @@ svg {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out 3s forwards infinite;
   transform-origin: center;
-  position: absolute;
+  position: static;
   top: 290px;
   right: 350px;
   z-index: 1;
@@ -109,6 +111,7 @@ h5 {
   font-weight: normal;
   font-family: "Sonsie One", cursive;
   animation: click infinite 3s;
+  margin-top: auto;
 }
 /* .mouse {
   position: relative;
@@ -259,45 +262,66 @@ h5 {
   }
 
   .name {
-    font-size: 24px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: none;
   }
   .logo {
     display: block;
   }
   .logo a img {
-    top: 300px;
+    top: 240px;
     right: 150px;
     width: 100px;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 150px;
+    left: 25%;
   }
 }
 
 /* 모바일 반응형 (최대 767px) */
-@media screen and (max-width: 767px) {
-  svg {
-    height: 140px;
-    left: 20px;
+@media (max-width: 767px) {
+  .name {
+    font-size: 30px;
+    display: none;
   }
 
+  .letter {
+    font-size: 600px;
+    stroke-width: 1;
+  }
+
+  .logo a img {
+    width: 80px;
+    top: 50px;
+  }
+
+  h5 {
+    font-size: 25px;
+    margin-bottom: 250px;
+  }
+}
+
+@media (max-width: 480px) {
   .letter {
     font-size: 80px;
   }
 
   .name {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .logo a img {
-    top: 420px;
-    right: 120px;
-    width: 80px;
+    width: 60px;
+    right: 150px;
   }
 
   h5 {
-    font-size: 16px;
-    bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 180px;
+    left: 25%;
   }
 }
