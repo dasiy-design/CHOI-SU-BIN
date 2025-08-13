@@ -285,110 +285,107 @@
   margin: 120px;
 }
 
-/* Tablet 반응형 (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
-  .swiper-slide {
-    width: 300px;
-    height: 800px; /* 콘텐츠에 맞춰 유연하게 조절 */
+/* 태블릿 (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #publishing-page .swiper-slide {
+    height: auto;
+    padding: 40px 20px;
   }
-  .swiper-button-prev {
-    margin-left: 60px;
-  }
-  .swiper-button-next {
-    margin-right: 60px;
-  }
-  #publishing-page {
-    padding: 120px 0;
-  }
+
   #publishing-page .left_info {
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
   }
+
   #publishing-page .left_info .caption {
-    /* width: 100%; */
+    width: 100%;
     margin: 0 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
+
   #publishing-page .left_info .caption h3 {
     font-size: 28px;
   }
-  #publishing-page .left_info .caption strong.title {
-    font-size: 48px;
+
+  #publishing-page .left_info .caption p {
+    font-size: 18px;
   }
-  #publishing-page .left_info .caption .link a {
-    display: block;
-    margin-bottom: 20px;
+
+  #publishing-page .left_info .caption p em {
+    font-size: 16px;
   }
 
   #publishing-page .right_mockup {
-    margin-left: 50px;
-    max-width: 80%;
-  }
-  #publishing-page .mockup {
-    margin: 60px;
-  }
-  #publishing-page .boardlife .right_mockup video {
-    width: 250px;
+    max-width: 450px;
     margin-left: 80px;
   }
-  .video-wrapper {
-    width: 90%;
-    margin: 0 auto 30px;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin: 0 20px;
   }
-  #publishing-page .aespa .left_info .caption h3 {
-    font-size: 70px;
-  }
-  #publishing-page .aespa .right_mockup .pic .img-wrapper {
-    height: 400px;
-  }
-  #publishing-page .aespa .right_mockup .pic .img-wrapper .a1,
+
+  .a1,
   .a2,
   .a3 {
     width: 300px;
   }
-  #publishing-page .mediheal .left_info {
-    margin: -50px 0 -50px 150px;
-  }
-  .pc {
-    width: 72%;
-    transform: translate(74px, 51px);
-  }
 }
 
-/* Mobile 반응형 (max-width: 767px) */
-@media screen and (max-width: 767px) {
-  .swiper-slide {
-    width: 100%;
+/* 모바일 (max-width: 768px) */
+@media (max-width: 768px) {
+  #publishing-page .swiper-slide {
+    flex-direction: column;
+    align-items: center;
     height: auto;
+    padding: 20px 10px;
+    gap: 30px;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-  #publishing-page {
-    padding: 80px 0;
-  }
+
   #publishing-page .left_info {
     max-width: 100%;
-    margin: 0 auto;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
   }
+
   #publishing-page .left_info .caption {
-    margin: 0 10px;
+    width: 100%;
+    margin: 0;
     font-size: 16px;
   }
+
   #publishing-page .left_info .caption h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
+
+  #publishing-page .left_info .caption p {
+    font-size: 14px;
+  }
+
+  #publishing-page .left_info .caption p em {
+    font-size: 13px;
+  }
+
+  #publishing-page .left_info .caption strong,
   #publishing-page .left_info .caption strong.title {
-    font-size: 32px;
+    font-size: 32px !important;
   }
+
   #publishing-page .right_mockup {
-    margin: 0 auto;
     max-width: 100%;
-    transform: none;
+    margin-left: 0;
   }
+
+  .a1,
+  .a2,
+  .a3 {
+    width: 240px;
+  }
+
   .video-wrapper {
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 auto;
+    transform: none;
   }
 }
