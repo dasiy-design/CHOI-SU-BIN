@@ -1,5 +1,3 @@
-/* modal common */
-
 .cardnews-content {
   position: relative;
   display: flex;
@@ -105,4 +103,137 @@
   font-family: "Paperlogy-9Black";
   border-radius: 8px;
   color: var(--text-black);
+}
+
+/* 태블릿 반응형 (768px ~ 1024px) */
+@media screen and (max-width: 1024px) {
+  .cardnews-content {
+    width: 90%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .cardnews-content .modal-header h2 {
+    font-size: 32px;
+    padding: 15px 0;
+  }
+
+  .cardnews-content .modal-body p {
+    font-size: 18px;
+    padding: 20px;
+    position: static;
+  }
+
+  .cardnews-content .modal-body img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .cardnews-content .modal-sec a h6 {
+    font-size: 20px;
+    margin: 40px auto;
+    transform: rotate(3deg);
+    width: 80%;
+  }
+
+  .cardnews-content .modal-sec .container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    transform: none;
+    perspective: none;
+  }
+
+  .cardnews-content .modal-sec .container .slide {
+    position: static;
+    transform: none !important;
+    opacity: 1 !important;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardnews-content .modal-sec .container .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardnews-content .modal-sec .container button {
+    position: static;
+    transform: none;
+    gap: 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardnews-content {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .cardnews-content .modal-header h2 {
+    font-size: 26px;
+    padding: 10px 0;
+  }
+
+  .cardnews-content .modal-body p {
+    font-size: 16px;
+    padding: 10px;
+    position: static;
+  }
+
+  .cardnews-content .modal-body img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .cardnews-content .modal-sec a h6 {
+    font-size: 18px;
+    margin: 30px auto;
+    transform: rotate(0deg);
+    width: 100%;
+  }
+
+  .cardnews-content .modal-sec .container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    transform: none;
+    perspective: none;
+  }
+
+  .cardnews-content .modal-sec .container .slide {
+    position: static;
+    transform: none !important;
+    opacity: 1 !important;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardnews-content .modal-sec .container .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardnews-content .modal-sec .container button {
+    position: static;
+    transform: none;
+    gap: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    justify-content: center;
+  }
 }

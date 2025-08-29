@@ -1,5 +1,3 @@
-/* modal common */
-
 .diary-content {
   position: relative;
   display: flex;
@@ -34,4 +32,130 @@
 .diary-content .modal-sec h3 {
   background-color: #916df6;
   color: #444;
+}
+
+/* 태블릿 반응형 (768px ~ 1024px) */
+@media screen and (max-width: 1024px) {
+  .diary-content {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .diary-content .modal-header {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .diary-content .modal-header h2 {
+    font-size: 30px;
+    color: #ff4546;
+  }
+
+  .diary-content .modal-body {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diary-content .modal-body p {
+    font-size: 18px;
+    color: var(--text-black);
+    text-align: center;
+    padding: 15px;
+  }
+
+  .diary-content .modal-body img {
+    position: static;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .diary-content .modal-sec {
+    background-color: white;
+    padding: 30px 0;
+  }
+
+  .diary-content .modal-sec .pic {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+  }
+
+  .diary-content .modal-sec h3 {
+    background-color: #916df6;
+    color: #444;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/* 모바일 반응형 (최대 767px) */
+@media screen and (max-width: 767px) {
+  .diary-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .diary-content .modal-header {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .diary-content .modal-header h2 {
+    font-size: 24px;
+    color: #ff4546;
+  }
+
+  .diary-content .modal-body {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .diary-content .modal-body p {
+    font-size: 16px;
+    color: var(--text-black);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .diary-content .modal-body img {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .diary-content .modal-sec {
+    background-color: white;
+    padding: 20px 0;
+  }
+
+  .diary-content .modal-sec .pic {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .diary-content .modal-sec h3 {
+    background-color: #916df6;
+    color: #444;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+  }
 }

@@ -1,5 +1,3 @@
-/* modal common */
-
 .textPoster-content {
   position: relative;
   display: flex;
@@ -30,4 +28,103 @@
 .textPoster-content .modal-sec h3 {
   background-color: #e4e4e4;
   color: #444;
+}
+
+/* 태블릿 반응형 (768px ~ 1024px) */
+@media screen and (max-width: 1024px) {
+  .textPoster-content {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .textPoster-content .modal-header {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .textPoster-content .modal-header h2 {
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .textPoster-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .textPoster-content .modal-body p {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .textPoster-content .modal-body img {
+    position: static;
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .textPoster-content .modal-sec h3 {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textPoster-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .textPoster-content .modal-header {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .textPoster-content .modal-header h2 {
+    font-size: 24px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .textPoster-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .textPoster-content .modal-body p {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .textPoster-content .modal-body img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .textPoster-content .modal-sec h3 {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
 }
