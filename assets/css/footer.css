@@ -1,6 +1,9 @@
 footer {
   background-color: var(--primary-yellow);
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 footer p.footer_text {
   text-align: center;
