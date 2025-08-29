@@ -41,7 +41,12 @@
 #publishing-page {
   padding: 160px 0;
 }
-
+#publishing-page .page-index {
+  display: block;
+  margin-left: 30px;
+  height: 100px;
+  width: 200px;
+}
 #publishing-page .left_info {
   display: flex;
   flex-direction: column;
@@ -282,17 +287,12 @@
 
 /* 태블릿 (max-width: 1024px) */
 @media (max-width: 1024px) {
-  #publishing-page {
-    padding: 160px 0;
-  }
   #publishing-page .swiper-slide {
-    height: auto;
     padding: 40px 20px;
   }
 
   #publishing-page .left_info {
     max-width: 350px;
-    height: auto;
   }
 
   #publishing-page .left_info .caption {

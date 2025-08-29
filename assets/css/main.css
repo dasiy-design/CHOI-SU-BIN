@@ -17,7 +17,7 @@ main {
   font-family: "Paperlogy-9Black";
   font-weight: 900;
   letter-spacing: -2px;
-  padding-top: 50px;
+  padding: 50px;
   text-align: center;
 }
 #resume .all {
@@ -196,7 +196,7 @@ main {
   color: var(--secondary);
   padding: 10px;
   left: 0;
-  top: 253px;
+  top: 260px;
   border-radius: 0 8px 0 0;
   font-family: "Paperlogy-4Regular";
 }
@@ -370,7 +370,6 @@ main {
   #resume .top-left .mypage p.icon {
     font-size: 16px;
     width: 100%;
-    justify-content: center;
   }
 
   #resume .top-left .spec .edu,
@@ -383,11 +382,18 @@ main {
     flex-direction: column;
     align-items: center;
   }
-
+  #resume .top-right .skills-gallery-container .left h3 {
+    margin: 20px;
+  }
+  #resume .top-right .skills-gallery-container .left {
+    width: 90%;
+  }
+  #resume .top-right .skills-gallery-container .left .other {
+    width: 89%;
+  }
   #resume .skills-gallery-container .left,
   #resume .skills-gallery-container .right {
-    width: 95%;
-    height: auto;
+    width: 90%;
     padding: 20px 0;
   }
 
@@ -408,22 +414,27 @@ main {
   }
 
   #resume .swiper-slide img {
-    height: 200px;
+    height: 300px;
     width: 300px;
-    left: 20px;
+    left: 27px;
   }
-
+  #resume .right .img h3 {
+    margin: 20px;
+  }
   #resume .swiper-slide .title {
     font-size: 14px;
-    top: 170px;
-    padding: 5px;
+    padding: 10px;
+    top: 260px;
   }
 
   #resume .bottom {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
-    height: auto;
+    height: 800px;
+  }
+  #resume .bottom p {
+    padding: 0 10px;
+    font-size: 17px;
   }
 
   #resume .bottom strong {
