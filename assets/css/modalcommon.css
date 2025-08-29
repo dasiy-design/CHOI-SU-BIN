@@ -94,7 +94,7 @@ span.close-modal:focus {
 .modal-body p {
   position: absolute;
   font-size: 25px;
-  color: var(--text-black);
+  color: white;
   font-family: "Paperlogy-4Regular";
   letter-spacing: 1px;
   padding: 0 50px;

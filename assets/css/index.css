@@ -101,20 +101,22 @@ h1 {
   font-size: 60px;
   font-family: "Paperlogy-4Regular";
 }
+.logo {
+  display: flex;
+  gap: 50px;
+}
 .logo a img {
   opacity: 0;
   animation: fadeInAndFloat 3s ease-in-out 3s forwards infinite;
   transform-origin: center;
-  position: static;
-  top: 290px;
+  bottom: 40px;
   right: 350px;
   z-index: 1;
   width: 80px;
 }
-h5 {
-  position: absolute;
+.logo h5 {
   bottom: 30px;
-  left: 40%;
+  left: 43%;
   font-size: 25px;
   color: #51ff2e;
   font-family: "Paperlogy-4Regular";
