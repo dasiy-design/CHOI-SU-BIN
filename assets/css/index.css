@@ -16,7 +16,7 @@ body {
 
 svg {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   top: 250px;
   left: 100px;
   z-index: 5;
@@ -52,9 +52,9 @@ svg {
   /* stroke: #333; */
   stroke-width: 2;
   /* animation: writeText 3s ease-in-out forwards infinite 3s; */
-  animation: writeText 3s ease-in infinite 3s;
+  /* animation: writeText 3s ease-in infinite 3s; */
   /* font-family: "Sonsie One", system-ui; */
-
+  font-family: "Paperlogy-5Medium";
   z-index: 10;
 }
 
