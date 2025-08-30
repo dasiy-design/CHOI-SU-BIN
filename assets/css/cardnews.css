@@ -41,6 +41,7 @@
 .cardnews-content .modal-sec {
   background-color: white;
 }
+
 .cardnews-content .modal-sec .container {
   /* overflow: hidden; */
   width: 1200px;
@@ -89,13 +90,15 @@
   transform: translate(calc(-50% * -2.9), -50%) translateZ(-100px);
   opacity: 0.5;
 }
-.cardnews-content .modal-sec .container button {
+.cardnews-content .modal-sec .arrow {
   position: absolute;
-  bottom: 100px;
+  bottom: 350px;
   left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  transform: translate(-50%);
-  gap: 50px;
+  gap: 35px;
+}
+.cardnews-content .modal-sec .arrow button {
   padding: 10px;
   border: none;
   outline: none;

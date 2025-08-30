@@ -1,47 +1,20 @@
-var btn = document.querySelectorAll("button.modal-custom-button");
-var modals = document.querySelectorAll(".modal-custom");
-var spans = document.getElementsByClassName("close-modal");
+// 모달 열고 닫기
+var btn = document.querySelectorAll("button.modal-custom-button"); //modal open
+var modals = document.querySelectorAll(".modal-custom"); //클래스 가진 모든 모달 창 요소 선택
+var spans = document.getElementsByClassName("close-modal"); //닫기 버튼 선택
 
 for (var i = 0; i < btn.length; i++) {
   btn[i].onclick = function (e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
-    modal.style.display = "block";
+    e.preventDefault(); //버튼 클릭시
+    modal = document.querySelector(e.target.getAttribute("href")); //링크이동막기
+    modal.style.display = "block"; //각 아이디명에 맞는 모달 열기
   };
 
   spans[i].onclick = function () {
     for (var index in modals) {
       if (typeof modals[index].style !== "undefined")
-        modals[index].style.display = "none";
+        //닫기버튼 누르면
+        modals[index].style.display = "none"; //모든 모달 반복하면서 모든 모달 닫기
     }
   };
 }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target.classList.contains("modal-custom")) {
-    for (var index in modals) {
-      if (typeof modals[index].style !== "undefined")
-        modals[index].style.display = "none";
-    }
-  }
-};
-
-// modal cardnews button click
-const container = document.querySelector(".container");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
-// 다음 슬라이드 이동버튼 설정
-next.addEventListener("click", () => {
-  const slides = document.querySelectorAll(".slide");
-
-  container.append(slides[0]);
-});
-
-// 이전 슬라이드 이동버튼 설정
-prev.addEventListener("click", () => {
-  const slides = document.querySelectorAll(".slide");
-
-  container.prepend(slides[slides.length - 1]);
-});
