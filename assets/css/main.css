@@ -20,6 +20,7 @@ main {
   letter-spacing: -2px;
   padding: 50px;
   text-align: center;
+  word-break: keep-all;
 }
 #resume .all {
   max-width: 1600px;
