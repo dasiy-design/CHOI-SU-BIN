@@ -106,19 +106,24 @@ h1 {
 /* uiux */
 .text h1 {
   font-size: 60px;
-  font-family: "Paperlogy-4Regular";
+  font-family: "Paperlogy-5Medium";
   color: #a77459;
   text-transform: capitalize;
 }
 .text p {
   font-size: 28px;
-  font-family: "Paperlogy-4Regular";
+  font-family: "Paperlogy-5Medium";
   color: #666;
 }
-
 .text p span {
   animation: moving-heart 2s infinite ease-in-out;
   margin-left: 2px;
+}
+.text p em {
+  color: #666;
+  font-style: normal;
+  font-family: "S-CoreDream-4Regular";
+  font-size: 14px;
 }
 .go-to {
   margin-top: 60px;
