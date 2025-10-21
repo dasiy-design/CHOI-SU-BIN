@@ -98,8 +98,6 @@ body {
   opacity: 0;
   transform: translateY(-50px);
   transition: all 1.2s ease-out;
-  margin: 100px 0;
-  padding: 50px;
   border-radius: 10px;
 }
 div.show {
@@ -109,7 +107,7 @@ div.show {
 .sec1 {
   background-color: var(--bg-green);
   width: 100vw;
-  height: 1000px;
+  height: 70rem;
 }
 
 .sec2 .swiper-wrapper {

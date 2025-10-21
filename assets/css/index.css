@@ -1,4 +1,5 @@
 @import url(/assets/css/font.css);
+@import url(/assets/css/animation.css);
 
 body {
   background-color: #faff9b;
@@ -101,6 +102,47 @@ h1 {
   font-size: 60px;
   font-family: "Paperlogy-4Regular";
 }
+
+/* uiux */
+.text h1 {
+  font-size: 60px;
+  font-family: "Paperlogy-4Regular";
+  color: #a77459;
+  text-transform: capitalize;
+}
+.text p {
+  font-size: 28px;
+  font-family: "Paperlogy-4Regular";
+  color: #666;
+}
+
+.text p span {
+  animation: moving-heart 2s infinite ease-in-out;
+  margin-left: 2px;
+}
+.go-to {
+  margin-top: 60px;
+  font-family: "Paperlogy-4Regular";
+}
+.go-to h6 a {
+  font-size: 18px;
+  color: salmon;
+  text-decoration: none;
+}
+.go-to h6 a span {
+  opacity: 0;
+}
+.go-to h6 a:hover {
+  color: salmon;
+  /* color: springgreen; */
+  font-style: italic;
+  text-decoration: underline;
+}
+.go-to h6 a:hover span {
+  opacity: 1;
+}
+/* ---------------------------------  */
+
 .logo {
   display: flex;
   gap: 50px;
