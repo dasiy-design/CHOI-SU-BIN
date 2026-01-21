@@ -674,7 +674,7 @@
       <section class="sec3" id="design-page">
         <div class="design-section">
           <div class="uiux-design">
-            <h3><em>UIUX </em>design</h3>
+            <h3><em>UIUX</em>design</h3>
             <div class="uiux-container">
               <!-- kt -->
               <div class="item">
@@ -687,6 +687,14 @@
                   </p>
                   <p class="date"><span>제작기간</span> 2 weeks</p>
                   <div class="link">
+                    <button
+                      type="button"
+                      class="overview-btn"
+                      data-overview-img="/assets/images/design/kt_viewpage.png"
+                    >
+                      오버뷰
+                    </button>
+
                     <a
                       href="https://www.figma.com/design/OEs57sLM4DgXq7J4zAIJXr/%EC%B5%9C%EC%88%98%EB%B9%88_%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9B%B9?node-id=0-1&t=Bk2ImClARlEYMLR1-1"
                       target="_blank"
@@ -706,11 +714,14 @@
                   </p>
                   <p class="date"><span>제작기간</span> 1 week</p>
                   <div class="link">
-                    <a
-                      href="https://lottesweetmall.com/index.html"
-                      target="_blank"
-                      ><button>LOTTE</button></a
+                    <button
+                      type="button"
+                      class="overview-btn"
+                      data-overview-img="/assets/images/design/lotte_view.png"
+                      alt="롯데 스위트몰 반응형 디자인시안"
                     >
+                      디자인시안
+                    </button>
                     <a
                       href="https://www.figma.com/design/6mV50AsII5kp2kUhLlp5p0/UIUX-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=1-151&t=dpU6TN5AyCWuiXq8-1"
                       target="_blank"
@@ -823,10 +834,9 @@
               </div>
             </div>
           </div>
-          <!-- <div class="design-grid">
+          <div class="design-grid">
             <h3><em>GRAPHIC</em> design</h3>
             <div class="design-item">
-
               <div class="item">
                 <img src="/assets/images/main.png" alt="" />
                 <div class="overlay">
@@ -840,7 +850,7 @@
                     </p>
                   </div>
                   <div class="text-item">
-                    <p>제작날짜: 2025.</p>
+                    <p>제작날짜: 2025. 02. 04</p>
                     <p>제작기간: 4H</p>
                     <button class="modal-custom-button" href="#myModal1">
                       자세히보기
@@ -849,7 +859,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <!-- <div class="item">
                 <img src="/assets/images/design/namecard.png" alt="로고 명함" />
                 <div class="overlay">
                   <div class="text">
@@ -866,7 +876,7 @@
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="item">
                 <img src="/assets/images/design/boss.jpg" alt="보스 헤드셋" />
@@ -922,7 +932,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <!-- <div class="item">
                 <img src="/assets/images/design/popup.png" alt="팝업창" />
                 <div class="text">
                   <h5>팝업창 3type</h5>
@@ -935,7 +945,7 @@
                     자세히보기
                   </button>
                 </div>
-              </div>
+              </div> -->
 
               <div class="item">
                 <img
@@ -957,7 +967,7 @@
                 </div>
               </div>
 
-              <div class="item">
+              <!-- <div class="item">
                 <img src="/assets/images/design/mitte.jpg" alt="미떼" />
                 <div class="text">
                   <h5>미떼 광고 배너</h5>
@@ -972,7 +982,7 @@
                     자세히보기
                   </button>
                 </div>
-              </div>
+              </div> -->
 
               <div class="item">
                 <img src="/assets/images/design/diary.jpg" alt="다이어리" />
@@ -993,7 +1003,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
 
@@ -1136,7 +1146,7 @@
                 </div>
               </div> -->
               <!-- wiggle wiggle -->
-              <div class="item">
+              <!-- <div class="item">
                 <img src="/assets/images/design/other/wiggle.png" alt="" />
                 <div class="text">
                   <h5>위글위글 계절상품 VMD</h5>
@@ -1158,7 +1168,7 @@
                     >
                   </button>
                 </div>
-              </div>
+              </div> -->
               <!-- petcareroom -->
               <!-- <div class="item">
                 <img src="/assets/images/design/other/petcareroom.png" alt="" />
@@ -1278,6 +1288,29 @@
     </footer>
 
     <!-- MODAL -->
+    <!-- kt overview modal -->
+    <div id="imageModal" class="image-modal">
+      <div class="image-modal-content">
+        <span class="image-modal-close">&times;</span>
+        <img
+          id="imageModalImg"
+          src="/assets/images/design/kt_viewpage.png"
+          alt="overview image"
+        />
+      </div>
+    </div>
+
+    <div id="imageModal" class="image-modal">
+      <div class="image-modal-content">
+        <span class="image-modal-close">&times;</span>
+        <img
+          id="imageModalImg"
+          src="/assets/images/design/lotte_view.png"
+          alt="overview image"
+        />
+      </div>
+    </div>
+
     <!-- cardnews modal -->
     <div id="myModal1" class="modal-custom">
       <!-- Modal content -->
@@ -1667,6 +1700,7 @@
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/modalpng.js"></script>
     <script src="/assets/js/cardnews.js"></script>
 
     <!-- Initialize Swiper -->

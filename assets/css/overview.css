@@ -1,0 +1,27 @@
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.image-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 5vh auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.image-modal-content img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.image-modal-content {
+  -webkit-overflow-scrolling: touch;
+}
