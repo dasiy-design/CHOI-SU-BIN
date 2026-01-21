@@ -10,8 +10,158 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.container {
+  display: flex;
+}
+
+.left-panel {
+  flex: 1;
+  background-color: transparent;
+  padding: 50px 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+
+.contact-info {
+  width: 400px;
+  margin: 50px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-family: "Paperlogy-5Medium";
+}
+.contact-info .name p {
+  font-size: 22px;
+  margin: 20px 0;
+}
+.contact-info span {
+  color: #888;
+  font-family: "Paperlogy-4Regular";
+  margin: 0 6px;
+  font-size: 14px;
+}
+
+.tool-list {
+  display: flex; /* 가로 배치 */
+  gap: 12px;
+  padding: 0;
+  margin: 20px 0 0 50px;
+  justify-content: flex-start; /* 좌측 정렬, 가운데 정렬 원하면 center로 변경 */
+}
+.tool-list .tool-label {
+  font-family: "Paperlogy-5Medium";
+  color: #888;
+  white-space: nowrap;
+  user-select: none;
+  margin: 8px 20px 0 0;
+}
+.tool-list img {
+  /* width: 40px; */
+  height: 36px;
+  object-fit: contain;
+  user-select: none;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+
+/* 우측 패널 */
+.right-panel {
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard";
+}
+
+.right-panel h3 {
+  color: #18b845;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.right-panel .section {
+  margin-bottom: 36px;
+  font-family: "Pretendard";
+  font-weight: 500;
+}
+
+.right-panel ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.right-panel li {
+  font-size: 15px;
+  color: #444;
+}
+
+.right-panel li strong {
+  width: 90px;
+  display: inline-block;
+  color: #666;
+  font-family: "Paperlogy-5Medium";
+  font-size: 14px;
+}
+
+.right-panel li span.highlight {
+  color: #37a43e;
+  font-weight: 700;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.right-panel .section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.right-panel .section li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  color: #444;
+  font-family: "Pretendard";
+  font-weight: 500;
+}
+
+.right-panel .section li:last-child {
+  margin-bottom: 0;
+}
+
+.right-panel .section li .year {
+  width: 100px; /* 연도 고정폭 */
+  flex-shrink: 0;
+  font-weight: 600;
+  color: #666;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.right-panel .highlight {
+  color: #37a43e;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
 #resume h1.top {
-  color: #4fdd53;
+  color: #19be1e;
   font-size: 35px;
   font-weight: 900;
   margin-left: 50px;
@@ -36,6 +186,7 @@ main {
   display: flex;
   width: 100%;
   align-items: center;
+  margin-left: 80px;
 }
 #resume .top-left {
   display: flex;
@@ -54,12 +205,13 @@ main {
   padding-right: 10px;
 }
 #resume .top-left .mypage h3.name {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--secondary);
-  text-align: center;
+  /* text-align: center; */
   width: 230px;
   letter-spacing: 1px;
   font-family: "Paperlogy-7Bold";
+  margin-bottom: 20px;
 }
 #resume .top-left .mypage h3.name strong {
   font-size: 16px;
@@ -86,6 +238,10 @@ main {
 }
 
 /* left spec */
+#resume .top-left .spec .edu {
+  margin-bottom: 20px;
+  color: #333;
+}
 #resume .top-left .spec .edu,
 #resume .top-left .spec .exp {
   width: 320px;
@@ -113,12 +269,13 @@ main {
 
 /* skill box----------------- */
 #resume .top-right .skills-gallery-container .left {
-  width: 400px;
+  /* width: 400px; */
+  width: 850px;
   height: 420px;
   border-radius: 20px;
   background-color: white;
   position: relative;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
 }
 #resume .top-right .skills-gallery-container .left h3 {
   font-size: 25px;
@@ -163,13 +320,14 @@ main {
   span.skill_percentage {
   display: inline-block;
   width: 0;
-  height: 28px;
+  height: 22px;
   background-color: var(--primary-green);
   border-radius: 50px;
   text-align: right;
   align-content: center;
   padding-right: 10px;
   color: var(--primary-yellow);
+  font-size: 12px;
   font-family: "Paperlogy-5Medium";
   transition: width 1.5s ease-in-out;
 }
@@ -249,15 +407,16 @@ main {
 }
 #resume .bottom {
   background-color: white;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   border-radius: 20px;
   padding: 25px;
-  width: 100%;
+  /* width: 100%; */
+  width: 800px;
   height: 380px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-gray5);
+  /* color: var(--text-gray5); */
   font-family: "Paperlogy-5Medium";
   margin-top: 20px;
 }
@@ -267,19 +426,106 @@ main {
   font-family: "Paperlogy-7Bold";
   letter-spacing: 0.5px;
   color: #333;
+  font-size: 14px;
 }
 #resume .bottom em {
   color: var(--primary-green);
   font-family: "Paperlogy-8ExtraBold";
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   text-align: right;
 }
 
-/* 태블릿 반응형 (768px ~ 1024px) */
-@media screen and (max-width: 1024px) {
-  #resume .resume-main-content {
+/* =========================
+  TABLET (1024px 이하)
+========================= */
+@media (max-width: 1024px) {
+  main {
+    max-width: 100%;
+  }
+
+  /* ---------- resume container ---------- */
+  .container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  /* ---------- resume title ---------- */
+  #resume h1.top {
+    font-size: 26px;
+    padding: 30px 20px;
+    margin-left: 0;
+    line-height: 1.4;
+  }
+
+  #resume.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 가운데 */
+    align-items: center; /* 가로 가운데 */
+
+    width: 100%;
+    min-height: 70rem;
+    height: auto;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ---------- left panel ---------- */
+  .left-panel {
+    padding: 40px 20px 0;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 360px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .contact-info .name p {
+    font-size: 20px;
+  }
+
+  .tool-list {
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tool-list .tool-label {
+    margin: 8px 12px 0 0;
+  }
+
+  /* ---------- right panel ---------- */
+  .right-panel {
+    padding: 40px 24px;
+    width: 100%;
+  }
+
+  .right-panel h3 {
+    font-size: 20px;
+  }
+
+  .right-panel .section li {
+    font-size: 15px;
+  }
+
+  .right-panel li strong {
+    width: 80px;
+    font-size: 13px;
+  }
+
+  /* =================================================
+    아래는 기존 top-left / top-right 구조 대응
+    HTML에 남아 있으므로 안전 처리)
+  ================================================= */
+
+  /* #resume .resume-main-content {
+    flex-direction: column;
+    margin-left: 0;
     align-items: center;
   }
 
@@ -287,164 +533,69 @@ main {
     width: 100%;
     margin-left: 0;
     align-items: center;
-  }
-
-  #resume .top-left .mypage h3.name {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  #resume .top-left .mypage p.icon {
-    justify-content: left;
-  }
-
-  #resume .top-right {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  #resume .skills-gallery-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  #resume .skills-gallery-container .left,
-  #resume .skills-gallery-container .right {
-    width: 400px;
-    height: 420px;
-  }
-
-  #resume .swiper-slide img {
-    width: 69%;
-    left: 30px;
-    position: absolute;
-    object-fit: cover;
-    height: 300px;
-  }
-  #resume .swiper-slide .title {
-    left: 30px;
-    position: absolute;
-  }
-
-  #resume .right .img h3 {
-    font-size: 20px;
-  }
-
-  #resume .skills-gallery-container .left .skill-box {
-    position: static;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  #resume .bottom-section {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  #resume .bottom {
-    width: 90%;
-    margin: 40px auto;
-  }
-}
-
-/* 모바일 반응형 (최대 767px) */
-@media screen and (max-width: 767px) {
-  #resume h1.top {
-    font-size: 24px;
-    margin-top: 100px;
-  }
-
-  #resume .top-left {
-    width: 90%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  #resume .top-left .mypage h3.name {
-    font-size: 18px;
-    width: 100%;
-  }
-
-  #resume .top-left .mypage h3.name strong {
-    font-size: 14px;
-  }
-
-  #resume .top-left .mypage p.icon {
-    font-size: 16px;
-    width: 100%;
+    text-align: center;
   }
 
   #resume .top-left .spec .edu,
   #resume .top-left .spec .exp {
     width: 100%;
-    padding: 0 10px;
   }
 
-  #resume .skills-gallery-container {
+  #resume .top-right {
+    width: 100%;
+    margin-top: 40px;
+  } */
+
+  /* ---------- skills section ---------- */
+  /* #resume .skills-gallery-container {
     flex-direction: column;
+    gap: 30px;
     align-items: center;
   }
-  #resume .top-right .skills-gallery-container .left h3 {
-    margin: 20px;
-  }
-  #resume .top-right .skills-gallery-container .left {
-    width: 90%;
-  }
-  #resume .top-right .skills-gallery-container .left .other {
-    width: 89%;
-  }
-  #resume .skills-gallery-container .left,
-  #resume .skills-gallery-container .right {
-    width: 90%;
-    padding: 20px 0;
+
+  #resume .skills-gallery-container .left {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-bottom: 30px;
   }
 
   #resume .skills-gallery-container .left .skill-box {
     position: static;
     width: 100%;
-    height: auto;
     margin-left: 0;
+    padding: 0 20px;
   }
 
   #resume .skills-gallery-container .left .skill-item .skill_bar {
     width: 100%;
   }
 
-  #resume .right .img .gallery {
+  #resume .skills-gallery-container .right {
     width: 100%;
+    max-width: 600px;
     height: auto;
+    padding-bottom: 30px;
   }
 
-  #resume .swiper-slide img {
-    height: 300px;
-    width: 300px;
-    left: 27px;
-  }
-  #resume .right .img h3 {
-    margin: 20px;
-  }
-  #resume .swiper-slide .title {
-    font-size: 14px;
-    padding: 10px;
-    top: 260px;
+  #resume .right .img .gallery {
+    width: 100%;
+    height: 260px;
+  } */
+
+  /* ---------- bottom section ---------- */
+  /* #resume .bottom-section {
+    flex-direction: column;
+    align-items: center;
   }
 
   #resume .bottom {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 30px 20px;
     flex-direction: column;
     align-items: flex-start;
-    height: 800px;
-  }
-  #resume .bottom p {
-    padding: 0 10px;
-    font-size: 17px;
-  }
-
-  #resume .bottom strong {
-    margin-bottom: 5px;
-  }
-
-  #resume .bottom em {
-    font-size: 16px;
-  }
+    gap: 14px;
+  } */
 }

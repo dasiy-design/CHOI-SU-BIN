@@ -2,8 +2,37 @@
 @import url(/assets/css/animation.css);
 
 body {
-  background-color: #faff9b;
+  /* background: #bdf4d1; */
+  background: linear-gradient(
+    90deg,
+    rgba(189, 244, 209, 1) 0%,
+    rgba(255, 217, 177, 1) 100%
+  );
+
+  animation: flowingGradientHoriz 5s ease-in-out infinite alternate;
 }
+
+@keyframes flowingGradientHoriz {
+  0% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 20% 80%;
+  }
+  40% {
+    background-position: 40% 60%;
+  }
+  60% {
+    background-position: 60% 40%;
+  }
+  80% {
+    background-position: 80% 20%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -98,13 +127,17 @@ svg {
 .letter:nth-child(13) {
   animation-delay: 2.4s;
 }
-h1 {
-  font-size: 60px;
+/* h1 {
+  font-size: 45px;
   font-family: "Paperlogy-4Regular";
-}
+  text-align: left;
+  line-height: 50px;
+  color: #333;
+  padding: 50px 0;
+} */
 
 /* uiux */
-.text h1 {
+/* .text h1 {
   font-size: 60px;
   font-family: "Paperlogy-5Medium";
   color: #a77459;
@@ -139,13 +172,141 @@ h1 {
 }
 .go-to h6 a:hover {
   color: salmon;
-  /* color: springgreen; */
   font-style: italic;
   text-decoration: underline;
 }
 .go-to h6 a:hover span {
   opacity: 1;
+} */
+
+/* cover */
+.cover {
+  margin: 200px 100px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-family: "Pretendard";
 }
+.cover .right {
+  width: 500px;
+  margin-left: 250px;
+}
+.cover .right p {
+  text-align: left;
+  line-height: 2;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+.cover .right h1 {
+  position: relative;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 50px;
+  color: #333;
+  padding: 50px 0;
+}
+.cover .right h1 span {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  z-index: 0;
+}
+.cover .right h1 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 0;
+  height: 50%;
+  background-color: #4dd2c3;
+  opacity: 0.4;
+  z-index: -1;
+  animation: highlightLine 2.5s ease-out 0.5s forwards;
+}
+.cover .right h1 span.letter:nth-child(1)::after {
+  animation-delay: 0.5s;
+}
+.cover .right h1 span.letter:nth-child(2)::after {
+  animation-delay: 3s;
+}
+
+@keyframes highlightLine {
+  0% {
+    width: 0; /* 시작: 너비 0 */
+  }
+  100% {
+    width: 100%; /* 끝: 너비 100% (텍스트 전체 너비만큼) */
+  }
+}
+
+.shadow h3 {
+  font-size: 100px;
+  color: rgb(208, 208, 208, 0.16);
+  text-align: right;
+  font-family: "Sonsie One", system-ui;
+  margin-right: 100px;
+}
+.cover .left {
+  line-height: 50px;
+  width: 200px;
+  margin: 50px;
+  font-weight: 600;
+  color: #646464;
+}
+.cover .left span {
+  font-size: 14px;
+  margin: 60px;
+}
+.cover .left h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 60px;
+}
+.cover .left h6 {
+  padding-top: 90px;
+  margin: 60px;
+  font-size: 14px;
+}
+
+.main .page-nav-arrow {
+  position: fixed; /* 화면에 고정 */
+  top: 50%;
+  right: 150px; /* 오른쪽에서 30px 떨어짐 */
+  transform: translateY(-50%); /* 세로 중앙 정렬 */
+  width: 60px;
+  height: 60px;
+  background-color: #bdf4d1;
+  color: #444;
+  border-radius: 50%; /* 원형 모양 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em; /* 화살표 크기 */
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.main .page-nav-arrow:hover {
+  background-color: rgb(17, 144, 103);
+  transform: translateY(-50%) scale(1.1); /* 호버 시 약간 확대 */
+  color: white;
+}
+
+/* 스크린리더를 위한 숨김 텍스트 */
+.main span.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 /* ---------------------------------  */
 
 .logo {
@@ -321,11 +482,162 @@ h1 {
 }
 
 /*  태블릿 반응형 (768px ~ 1024px) */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  /* 배경 애니메이션은 기본적으로 전역으로 적용되므로 수정 불필요 */
+
+  .cover {
+    flex-direction: column;
+    margin: 80px 40px 0;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cover .left {
+    width: 100%;
+    margin: 0 0 50px 0;
+    line-height: normal;
+    padding-bottom: 30px;
+  }
+
+  .cover .left span {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .cover .left h5 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+
+  .cover .left h6 {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    padding-top: 0;
+  }
+
+  .cover .right {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .cover .right p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    padding-bottom: 15px;
+  }
+
+  .cover .right h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  /* h1 span 하이라이트 애니메이션은 유지 */
+  .cover .right h1 span::after {
+    top: 35%;
+    height: 45%;
+  }
+
+  /* shadow h3 스타일 조정 */
+  .shadow h3 {
+    font-size: 70px;
+    margin-right: 40px;
+    text-align: center;
+  }
+
+  /* 페이지 전환 화살표 위치 및 크기 조정 */
+  .main .page-nav-arrow {
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.8em;
+  }
+
+  .main .page-nav-arrow:hover {
+    transform: translateY(-50%) scale(1.05);
+  }
+}
+
+/* 모바일 사이즈 미디어 쿼리 (max-width: 768px)
+   ============================================== */
+@media (max-width: 768px) {
+  .cover {
+    margin: 50px 20px 0;
+  }
+
+  .cover .left {
+    margin: 0 0 40px 0;
+    padding-bottom: 20px;
+  }
+
+  .cover .left span {
+    font-size: 16px;
+  }
+
+  .cover .left h5 {
+    font-size: 28px;
+    margin: 8px 0;
+  }
+
+  .cover .left h6 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .cover .right {
+    margin: 40px auto 0 auto;
+    padding: 0 10px;
+  }
+
+  .cover .right p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+  }
+
+  .cover .right h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    padding: 20px 0;
+  }
+
+  /* 모바일에서 h1 줄바꿈 강제 제거 */
+  .cover .right h1 br {
+    display: none;
+  }
+
+  .cover .right h1 span::after {
+    top: 40%;
+    height: 40%;
+  }
+
+  /* shadow h3 스타일 조정 */
+  .shadow h3 {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+
+  /* 페이지 전환 화살표 위치 및 크기 조정 */
+  .main .page-nav-arrow {
+    right: 30px; /* 오른쪽에서 여백 더 줄이기 */
+    width: 45px;
+    height: 45px;
+    font-size: 1.5em;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
   svg {
     height: 180px;
     left: 50px;
-    /* width: 600px; */
   }
 
   .code,
@@ -354,7 +666,6 @@ h1 {
   }
 }
 
-/* 모바일 반응형 (최대 767px) */
 @media (max-width: 767px) {
   .name {
     font-size: 30px;
@@ -366,12 +677,10 @@ h1 {
     font-size: 80px;
     stroke-width: 1;
   }
-
   .logo a img {
     width: 80px;
     top: 50px;
   }
-
   h5 {
     font-size: 25px;
     margin-bottom: 250px;
@@ -386,19 +695,16 @@ h1 {
   .letter {
     word-break: break-all;
   }
-
   .name {
     font-size: 30px;
   }
-
   .logo a img {
     width: 60px;
     right: 150px;
   }
-
   h5 {
     font-size: 20px;
     margin-bottom: 100px;
     left: 25%;
   }
-}
+} */

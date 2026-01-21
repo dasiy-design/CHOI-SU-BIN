@@ -26,9 +26,9 @@
 @import url(/assets/css/diary.css);
 
 :root {
-  --primary-green: #4fdd53;
-  --primary-yellow: #f8ff64;
-  --bg-green: #d9ffda;
+  --primary-green: #19be1e;
+  --primary-yellow: #fbffab;
+  --bg-green: #e4ffe5;
   --secondary: #a77459;
   --text-black: #333;
   --text-gray5: #555;
@@ -68,6 +68,7 @@ em {
 }
 p {
   margin-bottom: 20px;
+  font-size: 14px;
 }
 /* button{
   border: none;
@@ -106,8 +107,10 @@ div.show {
 }
 .sec1 {
   background-color: var(--bg-green);
-  width: 100vw;
-  height: 70rem;
+  width: 100%;
+  min-height: 70rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .sec2 .swiper-wrapper {
@@ -161,11 +164,14 @@ button.modal-close {
 a button {
   position: relative;
   width: 120px;
+  height: 30px;
   /* border: 2px solid var(--primary-green); */
-  border: 4px dotted var(--secondary);
-  background-color: #fff;
+  /* border: 4px dotted var(--secondary); */
+  border: none;
+  background-color: [powderblue];
   font-size: 20px;
-  color: var(--primary-green);
+  /* color: var(--primary-green); */
+  color: #222;
   margin-right: 20px;
   overflow: hidden;
 }

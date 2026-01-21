@@ -283,105 +283,151 @@
   margin: 120px;
 }
 
-/* 태블릿 (max-width: 1024px) */
+/* =========================
+  TABLET (PC 레이아웃 유지형)
+  1024px 이하
+========================= */
 @media (max-width: 1024px) {
-  #publishing-page .swiper-slide {
-    padding: 40px 20px;
+  /* ---------- publishing page 전체 ---------- */
+  #publishing-page {
+    padding: 120px 0;
   }
 
-  #publishing-page .left_info {
-    max-width: 350px;
-  }
-
-  #publishing-page .left_info .caption {
+  /* swiper slide 구조 유지 */
+  .swiper-slide {
     width: 100%;
-    margin: 0 20px;
-    font-size: 18px;
-  }
-
-  #publishing-page .left_info .caption h3 {
-    font-size: 28px;
-  }
-
-  #publishing-page .left_info .caption p {
-    font-size: 18px;
-  }
-
-  #publishing-page .left_info .caption p em {
-    font-size: 16px;
-  }
-
-  #publishing-page .right_mockup {
-    max-width: 450px;
-    margin-left: 80px;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin: 0 20px;
-  }
-
-  .a1,
-  .a2,
-  .a3 {
-    width: 300px;
-  }
-}
-
-/* 모바일 (max-width: 768px) */
-@media (max-width: 768px) {
-  #publishing-page .swiper-slide {
-    flex-direction: column;
+    height: 600px;
+    flex-direction: row; /* ★ 중요 */
     align-items: center;
-    height: auto;
-    padding: 20px 10px;
-    gap: 30px;
   }
 
+  /* =========================
+  LINK RESPONSIVE
+========================= */
+  /* link 컨테이너 */
+  .link {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  /* 버튼 */
+  .link a button {
+    width: 106px;
+    margin-left: 0;
+    height: 30px;
+  }
+
+  /* ---------- 왼쪽 텍스트 영역 ---------- */
   #publishing-page .left_info {
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0 10px;
+    max-width: 360px;
   }
 
   #publishing-page .left_info .caption {
     width: 100%;
-    margin: 0;
-    font-size: 16px;
-  }
-
-  #publishing-page .left_info .caption h3 {
-    font-size: 20px;
-  }
-
-  #publishing-page .left_info .caption p {
+    /* margin: 0 100px; */
     font-size: 14px;
+    line-height: 1.5;
   }
-
   #publishing-page .left_info .caption p em {
-    font-size: 13px;
+    font-size: 15px;
   }
 
-  #publishing-page .left_info .caption strong,
-  #publishing-page .left_info .caption strong.title {
-    font-size: 32px !important;
+  #publishing-page .swiper .left_info .caption h3 {
+    font-size: 25px;
   }
 
+  #publishing-page .left_info .caption h3 strong {
+    font-size: 42px;
+  }
+
+  /* ---------- 오른쪽 mockup 전체 축소 ---------- */
   #publishing-page .right_mockup {
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 420px;
+    margin-left: 80px;
+    transform: scale(0.8); /* ★ 핵심 */
+    transform-origin: left center; /* ★ 기준점 */
+    animation: none;
   }
 
-  .a1,
-  .a2,
-  .a3 {
-    width: 240px;
+  /* pc mockup */
+  #publishing-page .right_mockup .mockup img {
+    transform: rotate(-20deg);
+    width: 90%;
+  }
+
+  /* video 영역 보정 */
+  .pc {
+    transform: translate(127px, 101px);
+    width: 134%;
   }
 
   .video-wrapper {
+    width: 72%;
+    margin: 0 260px 40px 30px;
+    transform: skew(-4deg, -2deg);
+  }
+
+  /* ---------- boardlife ---------- */
+  #publishing-page .boardlife {
     width: 100%;
-    margin: 0 auto;
-    transform: none;
+  }
+
+  #publishing-page .boardlife .right_mockup {
+    transform: scale(0.78);
+  }
+
+  #publishing-page .boardlife .left_info .caption p {
+    font-size: 22px;
+  }
+
+  /* ---------- mmca ---------- */
+  #publishing-page .mmca {
+    display: flex;
+    align-items: center;
+  }
+
+  #publishing-page .mmca .mockup {
+    width: 460px;
+    margin: 80px;
+    transform: scale(0.85);
+  }
+
+  #publishing-page .mmca .left_info .caption p {
+    font-size: 20px;
+  }
+
+  /* ---------- aespa ---------- */
+  #publishing-page .aespa .right_mockup {
+    transform: scale(0.75);
+    margin-top: -20px;
+  }
+  #publishing-page .aespa .left_info .caption h3 {
+    font-size: 30px;
+  }
+
+  #publishing-page .aespa .right_mockup .pic .img-wrapper {
+    height: 420px;
+  }
+
+  #publishing-page .aespa .right_mockup .pic .img-wrapper .a1,
+  #publishing-page .aespa .right_mockup .pic .img-wrapper .a2,
+  #publishing-page .aespa .right_mockup .pic .img-wrapper .a3 {
+    width: 340px;
+  }
+
+  /* ---------- mediheal ---------- */
+  #publishing-page .mediheal .right_mockup {
+    transform: scale(0.78);
+    margin-left: 60px;
+  }
+
+  /* ---------- swiper arrow ---------- */
+  .swiper-button-prev {
+    margin-left: 40px;
+  }
+
+  .swiper-button-next {
+    margin-right: 40px;
   }
 }
