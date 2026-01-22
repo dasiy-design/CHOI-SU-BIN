@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -93,10 +93,13 @@
                   <strong>2025 07</strong> 이젠아카데미 UI/UX
                   프론트엔드부트캠프(960H) 이수
                 </li>
-                <li>
+                <li
+                  data-img="/assets/images/curilog.jpg"
+                  data-img="/asstes/images/team/jpg"
+                >
                   <strong>2025 02</strong>동서울대학교 산업디자인학과 학사 졸업
                 </li>
-                <li>
+                <li data-img="/assets/images/2022.jpg">
                   <strong>2023 02</strong>동서울대학교 디자인융합과 전문학사
                   졸업
                 </li>
@@ -105,10 +108,18 @@
             <div class="experience section">
               <h3>Experience</h3>
               <ul>
-                <li><strong>2023 11</strong> 2023 산학협력 엑스포 참가</li>
-                <li><strong>2023 08</strong> U300+ 네트워킹데이 참가</li>
-                <li><strong>2023 07</strong> 모란시장 로스팅랩 굿즈 개발</li>
-                <li><strong>2023 06</strong> LINC 3.0 ICC 연계 창업 캠프</li>
+                <li data-img="/assets/images/daejeon.jpg">
+                  <strong>2023 11</strong> 2023 산학협력 엑스포 참가
+                </li>
+                <li data-img="images/u300.jpg">
+                  <strong>2023 08</strong> U300+ 네트워킹데이 참가
+                </li>
+                <li data-img="/assets/images/youtube.png">
+                  <strong>2023 07</strong> 모란시장 로스팅랩 굿즈 개발
+                </li>
+                <li data-img="/assets/images/icc.jpg">
+                  <strong>2023 06</strong> LINC 3.0 ICC 연계 창업 캠프
+                </li>
                 <li><strong>2023 04</strong>CU 편의점 아르바이트 (17개월)</li>
               </ul>
             </div>
@@ -133,15 +144,11 @@
                   <span class="highlight">교육부장관인증서</span>
                 </li>
                 <li>
-                  <strong>2023 08</strong> U300+ 성장트랙 최종선정
-                  <span class="highlight">교육부장관인증서</span>
-                </li>
-                <li>
                   <strong>2023 06</strong> 경기지역 DU LINC 3.0 ICC 창업캠프
                   경진대회
                   <span class="highlight">은상</span>
                 </li>
-                <li>
+                <li data-img="images/awards.jpg">
                   <strong>2023 08</strong> 블루어워즈 상품문화디자인 국제공모전
                   <span class="highlight">입상</span>
                 </li>
@@ -1288,6 +1295,14 @@
     </footer>
 
     <!-- MODAL -->
+    <!-- 상장 등 이미지 모달 -->
+    <div class="portfolio-modal" id="careerModal">
+      <div class="modal-inner">
+        <button class="modal-close" aria-label="닫기">&times;</button>
+        <img src="" alt="경력 증빙 이미지" />
+      </div>
+    </div>
+
     <!-- kt overview modal -->
     <div id="imageModal" class="image-modal">
       <div class="image-modal-content">

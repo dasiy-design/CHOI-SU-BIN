@@ -1,3 +1,27 @@
+// experience modal
+const modal = document.getElementById("careerModal");
+const modalImg = modal.querySelector("img");
+const closeBtn = modal.querySelector(".modal-close");
+
+document.querySelectorAll(".right-panel li[data-img]").forEach((item) => {
+  item.addEventListener("click", () => {
+    const imgSrc = item.dataset.img;
+    modalImg.src = imgSrc;
+    modal.classList.add("active");
+  });
+});
+
+closeBtn.addEventListener("click", closeModal);
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+
+function closeModal() {
+  modal.classList.remove("active");
+  modalImg.src = "";
+}
+
+// uiux modal
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("imageModalImg");

@@ -1,3 +1,60 @@
+/* 경험 모달 */
+/* li 클릭 가능 표시 */
+.right-panel li {
+  cursor: pointer;
+  position: relative;
+}
+
+/* hover 효과 (포트폴리오 감성) */
+.right-panel li:hover {
+  color: #b15d04;
+  font-weight: bold;
+}
+
+/* 모달 */
+.portfolio-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.portfolio-modal.active {
+  display: flex;
+}
+
+.modal-inner {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 85%;
+}
+
+.modal-inner img {
+  max-width: 100%;
+  max-height: 75vh;
+  display: block;
+}
+
+/* 닫기 버튼 */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------------------- */
+
+/* UIUX Modal */
 .image-modal {
   display: none;
   position: fixed;
