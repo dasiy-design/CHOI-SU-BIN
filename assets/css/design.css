@@ -157,7 +157,7 @@
 }
 
 /* 태블릿 (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 850px) {
   .design-section h3,
   .design-grid h3 {
     font-size: 32px;

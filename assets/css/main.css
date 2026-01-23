@@ -439,7 +439,7 @@ main {
 /* =========================
   TABLET (1024px 이하)
 ========================= */
-@media (max-width: 1024px) {
+@media (max-width: 850px) {
   main {
     max-width: 100%;
   }

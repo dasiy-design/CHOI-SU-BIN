@@ -480,7 +480,7 @@ svg {
 }
 
 /*  태블릿 반응형 (768px ~ 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 850px) {
   /* 배경 애니메이션은 기본적으로 전역으로 적용되므로 수정 불필요 */
 
   .cover {
